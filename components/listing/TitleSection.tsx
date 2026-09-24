@@ -5,17 +5,21 @@ import { ShareIcon, HeartIcon } from "../icons/Icons";
 
 interface TitleSectionProps {
   title: string;
+  onShareClick?: () => void;
 }
 
-export const TitleSection: React.FC<TitleSectionProps> = ({ title }) => {
+export const TitleSection: React.FC<TitleSectionProps> = ({
+  title,
+  onShareClick,
+}) => {
   const [isSaved, setIsSaved] = useState(false);
-  const [copiedNotice, setCopiedNotice] = useState(false);
 
   const handleShare = () => {
     if (navigator.clipboard) {
-      navigator.clipboard.writeText(window.location.href);
-      setCopiedNotice(true);
-      setTimeout(() => setCopiedNotice(false), 2000);
+      navigator.clipboard.writeText(window.location.href).catch(() => {});
+    }
+    if (onShareClick) {
+      onShareClick();
     }
   };
 
@@ -38,11 +42,6 @@ export const TitleSection: React.FC<TitleSectionProps> = ({ title }) => {
             <ShareIcon size={16} />
             <span>Share</span>
           </button>
-          {copiedNotice && (
-            <span className="absolute -bottom-7 left-0 bg-black text-white text-xs px-2 py-1 rounded shadow">
-              Link copied!
-            </span>
-          )}
 
           <button
             type="button"

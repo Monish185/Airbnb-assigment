@@ -53,17 +53,25 @@ export default function ListingPage() {
     nights: LISTING_DATA.pricing.nights,
   });
 
-  const [showReserveToast, setShowReserveToast] = useState(false);
+  const [toastMessage, setToastMessage] = useState<string | null>(null);
   const toastTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-  const handleReserveClick = () => {
+  const showToast = (message: string, duration = 2000) => {
     if (toastTimeoutRef.current) {
       clearTimeout(toastTimeoutRef.current);
     }
-    setShowReserveToast(true);
+    setToastMessage(message);
     toastTimeoutRef.current = setTimeout(() => {
-      setShowReserveToast(false);
-    }, 2000);
+      setToastMessage(null);
+    }, duration);
+  };
+
+  const handleReserveClick = () => {
+    showToast("You won't be charged yet");
+  };
+
+  const handleShareClick = () => {
+    showToast("Share options");
   };
 
   useEffect(() => {
@@ -95,7 +103,10 @@ export default function ListingPage() {
       {/* 3. Main Content Container */}
       <main className="flex-1 max-w-[1120px] w-full mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title & Action Row */}
-        <TitleSection title={LISTING_DATA.title} />
+        <TitleSection
+          title={LISTING_DATA.title}
+          onShareClick={handleShareClick}
+        />
 
         {/* 5-Photo Hero Grid */}
         <HeroGrid
@@ -192,6 +203,7 @@ export default function ListingPage() {
         activeCategoryId={activeCategoryId}
         onClose={closePhotoTour}
         onSelectPhoto={(idx) => openLightbox(idx, true)}
+        onShareClick={handleShareClick}
       />
 
       <LightboxModal
@@ -212,18 +224,18 @@ export default function ListingPage() {
         onClose={closeAmenitiesModal}
       />
 
-      {/* 7. Reserve Notification Toast */}
+      {/* 7. Bottom Notification Toast */}
       <div
         role="status"
         aria-live="polite"
-        className={`fixed bottom-6 left-1/2 -translate-x-1/2 z-50 pointer-events-none transition-all duration-300 ease-out ${
-          showReserveToast
+        className={`fixed bottom-6 left-1/2 -translate-x-1/2 z-[70] pointer-events-none transition-all duration-300 ease-out ${
+          toastMessage
             ? "opacity-100 translate-y-0 scale-100"
             : "opacity-0 translate-y-3 scale-95"
         }`}
       >
         <div className="bg-[#222222] text-white text-[14px] font-normal px-4 py-2.5 rounded-[8px] shadow-[0_4px_16px_rgba(0,0,0,0.25)] whitespace-nowrap">
-          You won&apos;t be charged yet
+          {toastMessage}
         </div>
       </div>
     </div>

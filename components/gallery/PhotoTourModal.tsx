@@ -11,6 +11,7 @@ interface PhotoTourModalProps {
   activeCategoryId: string;
   onClose: () => void;
   onSelectPhoto: (globalIndex: number) => void;
+  onShareClick?: () => void;
 }
 
 export const PhotoTourModal: React.FC<PhotoTourModalProps> = ({
@@ -19,6 +20,7 @@ export const PhotoTourModal: React.FC<PhotoTourModalProps> = ({
   activeCategoryId,
   onClose,
   onSelectPhoto,
+  onShareClick,
 }) => {
   const modalRef = useRef<HTMLDivElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
@@ -113,6 +115,7 @@ export const PhotoTourModal: React.FC<PhotoTourModalProps> = ({
         <div className="flex items-center gap-2">
           <button
             type="button"
+            onClick={onShareClick}
             aria-label="Share listing"
             className="p-2.5 hover:bg-[#F7F7F7] rounded-full transition-colors text-[#222222] focus:outline-none focus-visible:ring-2 focus-visible:ring-black"
           >

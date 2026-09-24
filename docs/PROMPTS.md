@@ -195,3 +195,28 @@ when we click on reserve this bottom notification appears with an animation for 
 - Verified appearance and auto-dismissal using Playwright test (`qa/verify_reserve_toast.js`) and captured visual verification screenshot (`qa/reserve_toast_visible.png`).
 - Built and deployed changes to production `main`.
 
+---
+
+## User Prompt #12
+```text
+same when we click on share, share options appears in bottom
+```
+
+### Action Taken:
+- Analyzed user screenshot showing the `Share options` dark notification pill at the bottom of the viewport when clicking the "Share" button.
+- Generalized the toast notification architecture in `app/page.tsx`:
+  - Maintained `toastMessage` state and `showToast(msg, duration)` method.
+  - Positioned toast container with high z-index (`z-[70]`) so it remains visible above modals and page contents.
+- Updated `TitleSection.tsx`:
+  - Added `onShareClick?: () => void` prop.
+  - Removed outdated local `Link copied!` popover in favor of global bottom toast parity.
+  - Quietly copies URL to clipboard and triggers `showToast("Share options")`.
+- Updated `PhotoTourModal.tsx`:
+  - Wired `onShareClick` handler to the header's Share action.
+- Executed Playwright automated test (`qa/verify_share_toast.js`) confirming:
+  - Clicking "Share" displays `Share options` at the bottom with slide-and-fade animation.
+  - Clicking "Reserve" continues to display `You won't be charged yet`.
+  - Captured verification screenshot in `qa/share_toast_visible.png`.
+- Compiled clean production build and committed to `main`.
+
+
