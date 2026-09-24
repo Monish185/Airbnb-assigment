@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import {
   AirbnbLogo,
   SearchIcon,
@@ -12,11 +13,11 @@ import {
 export const Navbar: React.FC = () => {
   return (
     <header className="sticky top-0 z-40 bg-white border-b border-[#EBEBEB]">
-      <div className="max-w-[1760px] mx-auto px-10 h-20 flex items-center justify-between">
+      <div className="max-w-[1760px] mx-auto px-6 md:px-10 lg:px-20 h-20 flex items-center justify-between relative">
         {/* Left: Brand Logo */}
-        <div className="flex-1 flex items-center">
+        <div className="flex items-center shrink-0">
           <a
-            href="#"
+            href="/"
             className="inline-flex items-center text-[#FF385C] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black rounded-lg"
             aria-label="Airbnb homepage"
           >
@@ -25,35 +26,35 @@ export const Navbar: React.FC = () => {
         </div>
 
         {/* Center: Search pill */}
-        <div className="flex items-center">
-          <div className="flex items-center border border-[#DDDDDD] rounded-full py-2 px-4 shadow-[0_1px_2px_rgba(0,0,0,0.08)] hover:shadow-[0_2px_4px_rgba(0,0,0,0.18)] transition-shadow duration-200 cursor-pointer">
-            <button
-              type="button"
-              className="text-sm font-semibold px-2 text-[#222222] focus:outline-none"
-            >
+        <div
+          id="desktop-search-pill"
+          className="hidden sm:flex md:absolute md:left-1/2 md:-translate-x-1/2 items-center w-[404px] h-[48px] border border-[#DDDDDD] rounded-full pl-3 pr-2 shadow-[0_1px_2px_rgba(0,0,0,0.08),0_4px_12px_rgba(0,0,0,0.05)] hover:shadow-[0_2px_4px_rgba(0,0,0,0.18)] transition-all cursor-pointer select-none justify-between z-10"
+        >
+          <div className="flex items-center gap-2 pr-2">
+            <Image
+              src="/images/search_house.png"
+              alt=""
+              width={30}
+              height={30}
+              className="w-[30px] h-[30px] object-contain shrink-0"
+              priority
+            />
+            <span className="text-[14px] font-semibold text-[#222222]">
               Anywhere
-            </button>
-            <span className="h-6 w-[1px] bg-[#DDDDDD]" aria-hidden="true" />
-            <button
-              type="button"
-              className="text-sm font-semibold px-3 text-[#222222] focus:outline-none"
-            >
+            </span>
+          </div>
+          <span className="h-6 w-[1px] bg-[#DDDDDD] shrink-0" aria-hidden="true" />
+          <div className="flex items-center px-3">
+            <span className="text-[14px] font-semibold text-[#222222]">
               Anytime
-            </button>
-            <span className="h-6 w-[1px] bg-[#DDDDDD]" aria-hidden="true" />
-            <button
-              type="button"
-              className="text-sm font-normal px-2 text-[#717171] focus:outline-none"
-            >
-              Add guests
-            </button>
-            <button
-              type="button"
-              aria-label="Search"
-              className="ml-2 w-8 h-8 rounded-full bg-[#FF385C] text-white flex items-center justify-center hover:bg-[#E61E4D] transition-colors"
-            >
+            </span>
+          </div>
+          <span className="h-6 w-[1px] bg-[#DDDDDD] shrink-0" aria-hidden="true" />
+          <div className="flex items-center pl-2 gap-3">
+            <span className="text-[14px] text-[#717171]">Add guests</span>
+            <div className="bg-[#FF385C] text-white w-8 h-8 rounded-full flex items-center justify-center shrink-0 hover:bg-[#E61E4D] transition-colors">
               <SearchIcon size={12} className="text-white" />
-            </button>
+            </div>
           </div>
         </div>
 
