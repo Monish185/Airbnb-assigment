@@ -1,3 +1,7 @@
+import { ALL_AMENITIES, AmenityGroup, AmenityDetail } from "./allAmenities";
+export { ALL_AMENITIES };
+export type { AmenityGroup, AmenityDetail };
+
 export interface PhotoItem {
   id: string;
   src: string;
@@ -79,6 +83,7 @@ export interface ListingData {
     category: string;
     icon: string;
   }[];
+  allAmenities: AmenityGroup[];
   pricing: {
     pricePerNight: number;
     nights: number;
@@ -216,6 +221,7 @@ export const LISTING_DATA: ListingData = {
     { name: "Carbon monoxide alarm", category: "Safety", icon: "alarm" },
     { name: "Smoke alarm", category: "Safety", icon: "alarm" },
   ],
+  allAmenities: ALL_AMENITIES,
   pricing: {
     pricePerNight: 5700,
     nights: 5,

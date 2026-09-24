@@ -25,6 +25,7 @@ import { NearbyStaysSection } from "@/components/listing/NearbyStaysSection";
 
 import { PhotoTourModal } from "@/components/gallery/PhotoTourModal";
 import { LightboxModal } from "@/components/gallery/LightboxModal";
+import { AmenitiesModal } from "@/components/listing/AmenitiesModal";
 
 export default function ListingPage() {
   const {
@@ -38,6 +39,9 @@ export default function ListingPage() {
     openLightbox,
     closeLightbox,
     openGalleryFromLightbox,
+    isAmenitiesModalOpen,
+    openAmenitiesModal,
+    closeAmenitiesModal,
     nextPhoto,
     prevPhoto,
   } = useGallery();
@@ -100,7 +104,7 @@ export default function ListingPage() {
 
             <AmenitiesSection
               amenities={LISTING_DATA.amenities}
-              onShowAllAmenities={() => openPhotoTour("full-kitchen")}
+              onShowAllAmenities={openAmenitiesModal}
             />
 
             <CalendarSection />
@@ -172,6 +176,13 @@ export default function ListingPage() {
         onViewGallery={openGalleryFromLightbox}
         onNext={nextPhoto}
         onPrev={prevPhoto}
+      />
+
+      {/* 6. Amenities Full Dialog Modal */}
+      <AmenitiesModal
+        isOpen={isAmenitiesModalOpen}
+        amenitiesGroups={LISTING_DATA.allAmenities}
+        onClose={closeAmenitiesModal}
       />
     </div>
   );

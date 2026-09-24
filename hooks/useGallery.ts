@@ -6,6 +6,7 @@ import { LISTING_DATA, PhotoItem } from "../data/listing";
 export interface GalleryState {
   isPhotoTourOpen: boolean;
   isLightboxOpen: boolean;
+  isAmenitiesModalOpen: boolean;
   activePhotoIndex: number;
   activeCategoryId: string;
   allPhotos: PhotoItem[];
@@ -14,6 +15,8 @@ export interface GalleryState {
   openLightbox: (photoIndex: number, fromTour?: boolean) => void;
   closeLightbox: () => void;
   openGalleryFromLightbox: () => void;
+  openAmenitiesModal: () => void;
+  closeAmenitiesModal: () => void;
   nextPhoto: () => void;
   prevPhoto: () => void;
   setActiveCategoryId: (id: string) => void;
@@ -25,6 +28,7 @@ export function useGallery(): GalleryState {
 
   const [isPhotoTourOpen, setIsPhotoTourOpen] = useState(false);
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
+  const [isAmenitiesModalOpen, setIsAmenitiesModalOpen] = useState(false);
   const [activePhotoIndex, setActivePhotoIndex] = useState(0);
   const [activeCategoryId, setActiveCategoryId] = useState(
     LISTING_DATA.photoCategories[0].id
@@ -32,14 +36,14 @@ export function useGallery(): GalleryState {
 
   // Manage body scroll lock
   useEffect(() => {
-    if (isPhotoTourOpen || isLightboxOpen) {
+    if (isPhotoTourOpen || isLightboxOpen || isAmenitiesModalOpen) {
       const originalOverflow = document.body.style.overflow;
       document.body.style.overflow = "hidden";
       return () => {
         document.body.style.overflow = originalOverflow;
       };
     }
-  }, [isPhotoTourOpen, isLightboxOpen]);
+  }, [isPhotoTourOpen, isLightboxOpen, isAmenitiesModalOpen]);
 
   const openPhotoTour = useCallback((categoryId?: string) => {
     if (categoryId) {
@@ -68,6 +72,14 @@ export function useGallery(): GalleryState {
   const openGalleryFromLightbox = useCallback(() => {
     setIsLightboxOpen(false);
     setIsPhotoTourOpen(true);
+  }, []);
+
+  const openAmenitiesModal = useCallback(() => {
+    setIsAmenitiesModalOpen(true);
+  }, []);
+
+  const closeAmenitiesModal = useCallback(() => {
+    setIsAmenitiesModalOpen(false);
   }, []);
 
   const nextPhoto = useCallback(() => {
@@ -99,6 +111,7 @@ export function useGallery(): GalleryState {
   return {
     isPhotoTourOpen,
     isLightboxOpen,
+    isAmenitiesModalOpen,
     activePhotoIndex,
     activeCategoryId,
     allPhotos,
@@ -107,6 +120,8 @@ export function useGallery(): GalleryState {
     openLightbox,
     closeLightbox,
     openGalleryFromLightbox,
+    openAmenitiesModal,
+    closeAmenitiesModal,
     nextPhoto,
     prevPhoto,
     setActiveCategoryId,
