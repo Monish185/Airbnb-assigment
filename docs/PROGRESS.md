@@ -60,7 +60,7 @@
 - [ ] Highlights & Key Amenities
 - [ ] Description (collapsible / read more)
 - [ ] Sleeping Arrangements
-- [ ] Amenities Grid & modal trigger
+- [x] Amenities Grid & full modal dialog (with 50 individual handcrafted SVG amenity icons, item divider lines, category grouping, and smooth opening/closing transitions)
 - [ ] Reviews section with rating breakdown
 - [ ] Location & Candolim Map view
 - [ ] Host Profile card
