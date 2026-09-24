@@ -17,7 +17,7 @@ export const ALL_AMENITIES: AmenityGroup[] = [
         "available": true
       },
       {
-        "name": "Hot water",
+        "name": "Cleaning products",
         "available": true
       },
       {
@@ -25,11 +25,11 @@ export const ALL_AMENITIES: AmenityGroup[] = [
         "available": true
       },
       {
-        "name": "Shower gel",
+        "name": "Hot water",
         "available": true
       },
       {
-        "name": "Cleaning products",
+        "name": "Shower gel",
         "available": true
       }
     ]
@@ -42,10 +42,6 @@ export const ALL_AMENITIES: AmenityGroup[] = [
         "available": true
       },
       {
-        "name": "Essentials (Towels, bed sheets, soap, toilet paper)",
-        "available": true
-      },
-      {
         "name": "Hangers",
         "available": true
       },
@@ -54,15 +50,19 @@ export const ALL_AMENITIES: AmenityGroup[] = [
         "available": true
       },
       {
+        "name": "Room-darkening blinds",
+        "available": true
+      },
+      {
+        "name": "Essentials (Towels, bed sheets, soap, toilet paper)",
+        "available": true
+      },
+      {
         "name": "Iron",
         "available": true
       },
       {
         "name": "Clothes storage",
-        "available": true
-      },
-      {
-        "name": "Room-darkening blinds",
         "available": true
       },
       {
@@ -139,7 +139,7 @@ export const ALL_AMENITIES: AmenityGroup[] = [
         "available": true
       },
       {
-        "name": "Fridge &amp; Freezer",
+        "name": "Fridge & Freezer",
         "available": true
       },
       {
