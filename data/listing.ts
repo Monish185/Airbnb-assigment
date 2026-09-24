@@ -244,7 +244,9 @@ export const LISTING_DATA: ListingData = {
     { label: "Accuracy", count: 5 },
     { label: "Hot tub", count: 5 },
     { label: "Condition", count: 4 },
-    { label: "Hospitality", count: 4 },
+    { label: "Hospitality", count: 8 },
+    { label: "Cleanliness", count: 4 },
+    { label: "Amenities", count: 2 },
   ],
   reviews: [
     {

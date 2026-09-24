@@ -60,15 +60,23 @@ export const StarIcon: React.FC<IconProps> = ({ size = 14, className = "text-[#2
   </svg>
 );
 
-export const LaurelLeft: React.FC<IconProps> = ({ size = 32, className = "" }) => (
-  <svg viewBox="0 0 24 36" width={18} height={size} fill="currentColor" className={className} aria-hidden="true">
-    <path d="M19.5 2C15 8 9 14 5 22c-2 4-2.5 8-1 12 1-3 3-6 6-9 4-4 8-8 9.5-13C20 9 20 5 19.5 2z" />
+export const LaurelLeft: React.FC<IconProps> = ({ size = 48, className = "text-[#222222]" }) => (
+  <svg viewBox="0 0 24 48" width={size * 0.5} height={size} fill="currentColor" className={className} aria-hidden="true">
+    <path d="M21 44c-3.5-3.2-6.5-7.5-8.5-12.5C10.5 26.5 9.5 20.8 9.5 15c0-4 .5-8 1.5-11.8.3-1.1-.8-2-1.8-1.5C5 3.5 2 8.5 2 15c0 7.2 2 14.5 5.8 20.8 3.5 5.8 8.5 10.5 14.2 13.5.9.5 1.8-.4 1.2-1.3l-2.2-4z" />
+    <path d="M12.5 10c-2.2-.5-4.2 1-4.7 3.2s1 4.2 3.2 4.7 4.2-1 4.7-3.2-1-4.2-3.2-4.7z" />
+    <path d="M15 19.5c-2.2-.5-4.2 1-4.7 3.2s1 4.2 3.2 4.7 4.2-1 4.7-3.2-1-4.2-3.2-4.7z" />
+    <path d="M18 29.5c-2.2-.5-4.2 1-4.7 3.2s1 4.2 3.2 4.7 4.2-1 4.7-3.2-1-4.2-3.2-4.7z" />
+    <path d="M10 2.5C8 .5 5 1 4 3s1 4.5 3 5.5 5 0 6-2-1-3-3-4z" />
   </svg>
 );
 
-export const LaurelRight: React.FC<IconProps> = ({ size = 32, className = "" }) => (
-  <svg viewBox="0 0 24 36" width={18} height={size} fill="currentColor" className={className} aria-hidden="true">
-    <path d="M4.5 2C9 8 15 14 19 22c2 4 2.5 8 1 12-1-3-3-6-6-9-4-4-8-8-9.5-13C4 9 4 5 4.5 2z" />
+export const LaurelRight: React.FC<IconProps> = ({ size = 48, className = "text-[#222222]" }) => (
+  <svg viewBox="0 0 24 48" width={size * 0.5} height={size} fill="currentColor" className={className} aria-hidden="true">
+    <path d="M3 44c3.5-3.2 6.5-7.5 8.5-12.5C13.5 26.5 14.5 20.8 14.5 15c0-4-.5-8-1.5-11.8-.3-1.1.8-2 1.8-1.5 4.2 1.8 7.2 6.8 7.2 13.3 0 7.2-2 14.5-5.8 20.8-3.5 5.8-8.5 10.5-14.2 13.5-.9.5-1.8-.4-1.2-1.3l2.2-4z" />
+    <path d="M11.5 10c2.2-.5 4.2 1 4.7 3.2s-1 4.2-3.2 4.7-4.2-1-4.7-3.2 1-4.2 3.2-4.7z" />
+    <path d="M9 19.5c2.2-.5 4.2 1 4.7 3.2s-1 4.2-3.2 4.7-4.2-1-4.7-3.2 1-4.2 3.2-4.7z" />
+    <path d="M6 29.5c2.2-.5 4.2 1 4.7 3.2s-1 4.2-3.2 4.7-4.2-1-4.7-3.2 1-4.2 3.2-4.7z" />
+    <path d="M14 2.5C16 .5 19 1 20 3s-1 4.5-3 5.5-5 0-6-2 1-3 3-4z" />
   </svg>
 );
 
