@@ -153,5 +153,26 @@ git add README.md
 git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/Monish185/Airbnb-assigment.git
-git push -u origin main
 ```
+
+---
+
+## User Prompt #10
+```text
+not able to select dates but able to clear dates
+```
+
+### Action Taken:
+- Identified that in the prior calendar version, day buttons lacked interactive click handlers and state synchronization.
+- Implemented full interactive date range selection across October 2026 and November 2026 in `components/listing/CalendarSection.tsx`.
+- Added connector styling:
+  - Start date: Black circular badge (`bg-[#222222] text-white`) with right connector bar (`w-1/2 bg-[#F7F7F7]`).
+  - Range dates: Full light gray background bar (`bg-[#F7F7F7]`).
+  - End date: Left connector bar (`w-1/2 bg-[#F7F7F7]`) with black circular badge.
+- Added dynamic title/subtitle states:
+  - Default / Selected: `${nights} nights in Candolim` & `${startDate} - ${endDate}`.
+  - Partial Selection: `Select checkout date` & `Minimum stay: 2 nights`.
+  - Cleared: `Select check-in date` & `Add your travel dates for exact pricing`.
+- Connected `onDatesChange` callback in `app/page.tsx` to dynamically sync check-in, checkout, nights, and total accommodation cost with `BookingCard`.
+- Verified end-to-end functionality via Playwright script (`qa/verify_calendar_selection.js`), testing clear, start date click, end date click, and cross-month selection (Oct 28 to Nov 5).
+- Compiled clean production build and committed to `main`.
