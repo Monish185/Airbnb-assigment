@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { LISTING_DATA, PhotoItem } from "@/data/listing";
+import { LISTING_DATA, PhotoItem } from "../data/listing";
 
 export interface GalleryState {
   isPhotoTourOpen: boolean;
