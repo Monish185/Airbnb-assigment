@@ -176,3 +176,22 @@ not able to select dates but able to clear dates
 - Connected `onDatesChange` callback in `app/page.tsx` to dynamically sync check-in, checkout, nights, and total accommodation cost with `BookingCard`.
 - Verified end-to-end functionality via Playwright script (`qa/verify_calendar_selection.js`), testing clear, start date click, end date click, and cross-month selection (Oct 28 to Nov 5).
 - Compiled clean production build and committed to `main`.
+
+---
+
+## User Prompt #11
+```text
+when we click on reserve this bottom notification appears with an animation for a second or so
+```
+
+### Action Taken:
+- Analyzed user screenshot showing the bottom notification pill that triggers upon clicking "Reserve".
+- Extracted exact geometry and styles:
+  - Container: `fixed bottom-6 left-1/2 -translate-x-1/2 z-50`
+  - Pill styling: `bg-[#222222] text-white text-[14px] font-normal px-4 py-2.5 rounded-[8px] shadow-[0_4px_16px_rgba(0,0,0,0.25)] whitespace-nowrap`
+  - Text content: `You won't be charged yet`
+  - Animation: Slide-up (`translate-y-3` to `translate-y-0`) and fade-in (`opacity-0` to `opacity-100`) with `transition-all duration-300 ease-out`. Auto-dismisses after 2 seconds with smooth exit animation.
+- Implemented `showReserveToast` state and `handleReserveClick` in `app/page.tsx` for both `BookingCard` and `StickyHeader` reserve triggers.
+- Verified appearance and auto-dismissal using Playwright test (`qa/verify_reserve_toast.js`) and captured visual verification screenshot (`qa/reserve_toast_visible.png`).
+- Built and deployed changes to production `main`.
+

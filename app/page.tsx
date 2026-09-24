@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { LISTING_DATA } from "@/data/listing";
 import { useGallery } from "@/hooks/useGallery";
 
@@ -53,6 +53,27 @@ export default function ListingPage() {
     nights: LISTING_DATA.pricing.nights,
   });
 
+  const [showReserveToast, setShowReserveToast] = useState(false);
+  const toastTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  const handleReserveClick = () => {
+    if (toastTimeoutRef.current) {
+      clearTimeout(toastTimeoutRef.current);
+    }
+    setShowReserveToast(true);
+    toastTimeoutRef.current = setTimeout(() => {
+      setShowReserveToast(false);
+    }, 2000);
+  };
+
+  useEffect(() => {
+    return () => {
+      if (toastTimeoutRef.current) {
+        clearTimeout(toastTimeoutRef.current);
+      }
+    };
+  }, []);
+
   const handleHeroPhotoClick = (heroIndex: number) => {
     // Open lightbox directly on hero photo click
     openLightbox(heroIndex, false);
@@ -60,6 +81,7 @@ export default function ListingPage() {
 
   const handleReserveScroll = () => {
     bookingCardRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+    handleReserveClick();
   };
 
   return (
@@ -124,7 +146,7 @@ export default function ListingPage() {
               serviceFee={LISTING_DATA.pricing.serviceFee}
               checkInDate={bookingDates.checkInDate}
               checkoutDate={bookingDates.checkoutDate}
-              onReserveClick={() => alert("Reservation request initiated!")}
+              onReserveClick={handleReserveClick}
             />
           </div>
         </div>
@@ -189,6 +211,21 @@ export default function ListingPage() {
         amenitiesGroups={LISTING_DATA.allAmenities}
         onClose={closeAmenitiesModal}
       />
+
+      {/* 7. Reserve Notification Toast */}
+      <div
+        role="status"
+        aria-live="polite"
+        className={`fixed bottom-6 left-1/2 -translate-x-1/2 z-50 pointer-events-none transition-all duration-300 ease-out ${
+          showReserveToast
+            ? "opacity-100 translate-y-0 scale-100"
+            : "opacity-0 translate-y-3 scale-95"
+        }`}
+      >
+        <div className="bg-[#222222] text-white text-[14px] font-normal px-4 py-2.5 rounded-[8px] shadow-[0_4px_16px_rgba(0,0,0,0.25)] whitespace-nowrap">
+          You won&apos;t be charged yet
+        </div>
+      </div>
     </div>
   );
 }
