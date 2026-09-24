@@ -40,3 +40,30 @@ This log documents actions taken by specialized subagents during the development
   - Extracted 9 room categories with subtitles and 42 room photo mappings for Photo Tour.
   - Authored comprehensive `docs/SPEC.md` documenting every layout, design token, section structure, and overlay dialog.
 - **Status**: Completed.
+
+### Phase 2 - 7: Foundations, UI Build, QA, and Deployment
+- **Agent**: Builder Agent, A11y Agent, Orchestrator
+- **Timestamp**: 2026-09-24T20:45:00+05:30
+- **Actions**:
+  - Implemented Next.js 14 App Router, Tailwind tokens, typed `data/listing.ts` dataset.
+  - Built all listing sections: Navbar, StickyHeader, TitleSection, HeroGrid, Overview, Highlights, Description, SleepingArrangements, Amenities, Calendar, BookingCard, Reviews, Location, Host, ThingsToKnow, NearbyStays, Footer.
+  - Audited accessibility with `@axe-core/playwright` - zero violations achieved.
+  - Generated production enterprise marketplace architecture in `docs/architecture/`.
+  - Pushed to private GitHub repository `Monish185/Airbnb-assigment`.
+  - Successfully deployed to Vercel at `https://airbnb-assigment.vercel.app/`.
+- **Status**: Completed.
+
+### Phase 8: Visual & Behavioral Parity Alignment (Photo Tour & Lightbox)
+- **Agent**: QA & Diff Agent & Builder Agent
+- **Timestamp**: 2026-09-24T21:05:00+05:30
+- **Actions**:
+  - Investigated reference site `https://airbnbproj-iota.vercel.app/` photo tour and lightbox hierarchy.
+  - Aligned Photo Tour modal sticky top bar: reduced to 64px/80px (`h-16 md:h-20`) containing exclusively the Back chevron button, "Photo tour" centered title, and Share/Save action buttons.
+  - Moved category thumbnail carousel out of the sticky header and into the scrollable body (`id="photo-tour-thumbnails"`), allowing it to naturally scroll out of view when exploring room photos.
+  - Refactored room sections to 2-column layout: left column contains sticky room title (`H3`) and amenity subtitle; right column contains room photo grid (first photo full width, subsequent in 2-column pairs).
+  - Aligned single-photo Lightbox viewer to reference: clean white theme (`bg-white`), top header with 3x3 gallery grid button, current room category title, "X of 43" counter, circular navigation buttons with shadows, and smooth keyboard shortcuts.
+  - Enabled direct opening of single-photo Lightbox on hero photo clicks.
+  - Validated with Next.js production build (`npm run build`) and full Playwright test suite (`8/8 passed` across 1440x900 and 1920x1080).
+  - Pushed commits to GitHub `origin/main` for automatic Vercel redeployment.
+- **Status**: Completed.
+

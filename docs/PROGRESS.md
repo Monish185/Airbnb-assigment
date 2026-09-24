@@ -8,8 +8,8 @@
 - [x] **Phase 4: Photo Tour & Lightbox Overlays** (COMPLETE - Accessible dialogs, category navigation, single-photo lightbox)
 - [x] **Phase 5: Accessibility Audit & Remediation** (COMPLETE - 0 violations across all 3 views via axe-core)
 - [x] **Phase 6: Private GitHub Repository Setup** (COMPLETE - Pushed to https://github.com/Monish185/Airbnb-assigment.git)
-- [ ] **Phase 7: [STOP] Deployment to Vercel** (AWAITING USER DEPLOYMENT & LIVE URL)
-- [x] **Phase 8: Automated Visual QA & Pixel Diff Loop** (Local baseline complete: 8/8 Playwright tests passed)
+- [x] **Phase 7: Deployment to Vercel** (COMPLETE - Live at https://airbnb-assigment.vercel.app/)
+- [x] **Phase 8: Automated Visual QA & Pixel Diff Loop** (COMPLETE - Photo tour navbar, body thumbnails, sticky room title, and lightbox aligned with reference; 8/8 tests passed)
 - [x] **Phase 9: Marketplace Production Architecture Diagram** (COMPLETE - PNG, PDF, and Mermaid in docs/architecture/)
 - [ ] **Phase 10: Packaging & Final Deliverables** (Submission zip and final submission report)
 
