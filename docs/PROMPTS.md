@@ -274,6 +274,30 @@ when we scroll down this bar appears as sticky instead of the normal navbar
   - Captured verification screenshot in `qa/sticky_header_scrolled_verified.png`.
 - Compiled clean production build and committed to `main`.
 
+---
+
+## User Prompt #15
+```text
+errors? Cannot find module '@/components/listing/DescriptionSection' or its corresponding type declarations.
+```
+
+### Action Taken:
+- Analyzed IDE error screenshot showing red squiggly underlines on all `@/...` module imports.
+- Identified the cause:
+  - In `tsconfig.json`, redundant multi-target pattern mappings (`"@/*": ["./*", "*"]`, plus redundant sub-paths) and a cached TypeScript language server state in VS Code caused the IDE to fail resolving the `@/` path alias.
+- Resolution:
+  - Cleaned `tsconfig.json` paths mapping to the standard Next.js specification:
+    ```json
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    }
+    ```
+  - Added `.vscode/settings.json` configured with `"typescript.tsdk": "node_modules/typescript/lib"` so VS Code uses the workspace's TypeScript version (v5.4.5) with full Next.js App Router support.
+  - Cleared stale `tsconfig.tsbuildinfo`.
+  - Re-ran Next.js production build (`npm run build`), verifying 0 errors and 100% type validity.
+
+
 
 
 
