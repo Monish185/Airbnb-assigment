@@ -2,8 +2,8 @@
 
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
-import { CloseIcon, ChevronLeftIcon, ChevronRightIcon } from "@/components/icons/Icons";
-import { PhotoItem } from "@/data/listing";
+import { CloseIcon, ChevronLeftIcon, ChevronRightIcon } from "../icons/Icons";
+import { PhotoItem } from "../../data/listing";
 
 interface LightboxModalProps {
   isOpen: boolean;

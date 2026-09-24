@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import { StarIcon, LaurelLeft, LaurelRight } from "@/components/icons/Icons";
-import { ReviewItem } from "@/data/listing";
+import { StarIcon, LaurelLeft, LaurelRight } from "../icons/Icons";
+import { ReviewItem } from "../../data/listing";
 
 interface ReviewsSectionProps {
   rating: number;

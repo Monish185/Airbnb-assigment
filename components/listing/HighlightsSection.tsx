@@ -1,5 +1,5 @@
 import React from "react";
-import { AmenityIcons } from "@/components/icons/Icons";
+import { AmenityIcons } from "../icons/Icons";
 
 interface HighlightItem {
   title: string;

@@ -2,8 +2,8 @@
 
 import React from "react";
 import Image from "next/image";
-import { PhotoItem } from "@/data/listing";
-import { GridDotsIcon } from "@/components/icons/Icons";
+import { PhotoItem } from "../../data/listing";
+import { GridDotsIcon } from "../icons/Icons";
 
 interface HeroGridProps {
   photos: PhotoItem[];

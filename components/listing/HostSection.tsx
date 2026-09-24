@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import { StarIcon } from "@/components/icons/Icons";
-import { CoHost } from "@/data/listing";
+import { StarIcon } from "../icons/Icons";
+import { CoHost } from "../../data/listing";
 
 interface HostSectionProps {
   host: {

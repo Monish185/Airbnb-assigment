@@ -7,7 +7,7 @@ import {
   GlobeIcon,
   MenuIcon,
   UserCircleIcon,
-} from "@/components/icons/Icons";
+} from "../icons/Icons";
 
 export const Navbar: React.FC = () => {
   return (

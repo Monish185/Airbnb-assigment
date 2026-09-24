@@ -1,5 +1,5 @@
 import React from "react";
-import { ChevronRightIcon } from "@/components/icons/Icons";
+import { ChevronRightIcon } from "../icons/Icons";
 
 interface ThingsToKnowSectionProps {
   cancellationPolicy: string;

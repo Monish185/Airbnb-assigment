@@ -1,5 +1,5 @@
 import React from "react";
-import { GlobeIcon } from "@/components/icons/Icons";
+import { GlobeIcon } from "../icons/Icons";
 
 export const Footer: React.FC = () => {
   return (

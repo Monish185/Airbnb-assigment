@@ -2,8 +2,8 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { CloseIcon, ShareIcon, HeartIcon } from "@/components/icons/Icons";
-import { RoomCategory, PhotoItem } from "@/data/listing";
+import { CloseIcon, ShareIcon, HeartIcon } from "../icons/Icons";
+import { RoomCategory, PhotoItem } from "../../data/listing";
 
 interface PhotoTourModalProps {
   isOpen: boolean;

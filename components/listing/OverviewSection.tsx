@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { StarIcon, LaurelLeft, LaurelRight } from "@/components/icons/Icons";
+import { StarIcon, LaurelLeft, LaurelRight } from "../icons/Icons";
 
 interface OverviewSectionProps {
   propertyType: string;

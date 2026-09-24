@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { StarIcon } from "@/components/icons/Icons";
+import { StarIcon } from "../icons/Icons";
 
 interface StickyHeaderProps {
   onReserveClick?: () => void;

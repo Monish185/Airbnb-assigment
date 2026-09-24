@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { ChevronRightIcon } from "@/components/icons/Icons";
+import { ChevronRightIcon } from "../icons/Icons";
 
 interface DescriptionSectionProps {
   translationNotice: string;

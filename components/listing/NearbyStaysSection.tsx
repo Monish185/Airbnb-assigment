@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import { StarIcon, HeartIcon } from "@/components/icons/Icons";
-import { NearbyStay } from "@/data/listing";
+import { StarIcon, HeartIcon } from "../icons/Icons";
+import { NearbyStay } from "../../data/listing";
 
 interface NearbyStaysSectionProps {
   stays: NearbyStay[];

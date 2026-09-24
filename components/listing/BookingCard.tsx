@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { ChevronDownIcon } from "@/components/icons/Icons";
+import { ChevronDownIcon } from "../icons/Icons";
 
 interface BookingCardProps {
   pricePerNight: number;

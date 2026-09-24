@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { ShareIcon, HeartIcon } from "@/components/icons/Icons";
+import { ShareIcon, HeartIcon } from "../icons/Icons";
 
 interface TitleSectionProps {
   title: string;
