@@ -67,7 +67,7 @@
 - [ ] House Rules & Things to Know
 - [ ] Footer
 - [ ] Floating / Sticky Booking Card with price calculation
-- [ ] Sticky Header on scroll
+- [x] Sticky Header on scroll (replaces normal navbar with section tabs, pricing, rating, and Reserve pill)
 
 ### Phase 4: Photo Tour & Lightbox
 - [ ] Photo Tour full-screen overlay dialog (`role="dialog"`, `aria-modal="true"`)

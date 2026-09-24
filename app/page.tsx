@@ -98,7 +98,13 @@ export default function ListingPage() {
       <Navbar />
 
       {/* 2. Scroll-Linked Sticky Header */}
-      <StickyHeader onReserveClick={handleReserveScroll} />
+      <StickyHeader
+        pricePerNight={LISTING_DATA.pricing.pricePerNight}
+        nights={bookingDates.nights}
+        rating={LISTING_DATA.rating}
+        reviewsCount={LISTING_DATA.reviewsCount}
+        onReserveClick={handleReserveScroll}
+      />
 
       {/* 3. Main Content Container */}
       <main className="flex-1 max-w-[1120px] w-full mx-auto px-4 sm:px-6 lg:px-8">

@@ -244,5 +244,36 @@ the card looks like this and sticky in original
 - Captured visual verification screenshots (`qa/booking_card_top_verified.png`, `qa/booking_card_scrolled_verified.png`).
 - Compiled clean production build and committed to `main`.
 
+---
+
+## User Prompt #14
+```text
+when we scroll down this bar appears as sticky instead of the normal navbar
+```
+
+### Action Taken:
+- Analyzed user screenshot showing the sticky sub-header navigation bar containing tabs (`Photos`, `Amenities`, `Reviews`, `Location`), price calculation (`₹28,499 for 5 nights`), rating (`★ 4.95 · 19 reviews`), and pill `Reserve` button.
+- Identified root issue: The main `Navbar.tsx` had `sticky top-0 z-40`, keeping it permanently fixed at the top of the viewport and blocking the sub-header.
+- Updated `components/layout/Navbar.tsx`:
+  - Changed header positioning from `sticky top-0 z-40` to `relative w-full bg-white border-b border-[#EBEBEB]`, allowing the main navbar to naturally scroll out of view when the user scrolls down.
+- Updated `components/layout/StickyHeader.tsx`:
+  - Positioned fixed at `top-0 z-40 w-full bg-white border-b border-[#EBEBEB] shadow-[0_2px_4px_rgba(0,0,0,0.04)]`.
+  - Added visibility threshold when scroll offset exceeds `500px` (`scrollY > 500`), smoothly transitioning in when scrolling past the hero gallery.
+  - Implemented exact tab typography and active indicator: `Photos`, `Amenities`, `Reviews`, `Location`, with active section spy (`border-b-[2px] border-[#222222] text-[#222222]`) and smooth scroll targeting (`#hero-photos-section`, `#amenities-section`, `#reviews-section`, `#location-section`).
+  - Added dynamic right-side pricing and booking controls:
+    - Bold price calculation: `₹${totalPrice.toLocaleString("en-IN")} for ${nights} nights`.
+    - Rating & reviews badge: `★ ${rating.toFixed(2)} · ${reviewsCount} reviews` linking directly to `#reviews-section`.
+    - Button: Rounded pill (`rounded-full`) in Airbnb magenta (`#E00B41`), clicking smoothly scrolls to the booking card and triggers the bottom toast notification `"You won't be charged yet"`.
+- Connected props in `app/page.tsx`:
+  - Passed `pricePerNight`, `nights`, `rating`, `reviewsCount`, and `onReserveClick={handleReserveScroll}`.
+- Automated Verification:
+  - Created and ran Playwright script `qa/verify_sticky_header_behavior.js`:
+    - At scroll 0: Main Navbar is visible at `top: 0`, StickyHeader is hidden.
+    - At scroll 700: Main Navbar has scrolled off screen (`y: -700`), StickyHeader is pinned at `top: 0` with full interactive tabs, pricing, and Reserve button.
+    - Verified clicking "Reserve" in StickyHeader smoothly scrolls to the booking card and triggers the bottom toast notification.
+  - Captured verification screenshot in `qa/sticky_header_scrolled_verified.png`.
+- Compiled clean production build and committed to `main`.
+
+
 
 
