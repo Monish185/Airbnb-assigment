@@ -228,8 +228,8 @@ export const LISTING_DATA: ListingData = {
     cleaningFee: 1200,
     serviceFee: 3150,
     currencySymbol: "₹",
-    checkInDate: "18/10/2026",
-    checkoutDate: "23/10/2026",
+    checkInDate: "10/18/2026",
+    checkoutDate: "10/23/2026",
   },
   ratingsBreakdown: {
     cleanliness: 5.0,

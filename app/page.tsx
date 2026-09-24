@@ -116,7 +116,7 @@ export default function ListingPage() {
         />
 
         {/* Two-Column Layout */}
-        <div className="mt-8 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        <div className="mt-8 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
           {/* Left Column (7 cols) */}
           <div className="lg:col-span-7">
             <OverviewSection
@@ -149,16 +149,18 @@ export default function ListingPage() {
           </div>
 
           {/* Right Column (5 cols - Sticky Booking Card) */}
-          <div ref={bookingCardRef} className="lg:col-span-5">
-            <BookingCard
-              pricePerNight={LISTING_DATA.pricing.pricePerNight}
-              nights={bookingDates.nights}
-              cleaningFee={LISTING_DATA.pricing.cleaningFee}
-              serviceFee={LISTING_DATA.pricing.serviceFee}
-              checkInDate={bookingDates.checkInDate}
-              checkoutDate={bookingDates.checkoutDate}
-              onReserveClick={handleReserveClick}
-            />
+          <div ref={bookingCardRef} className="lg:col-span-5 relative">
+            <div className="sticky top-28 self-start w-full max-w-[370px] ml-auto">
+              <BookingCard
+                pricePerNight={LISTING_DATA.pricing.pricePerNight}
+                nights={bookingDates.nights}
+                cleaningFee={LISTING_DATA.pricing.cleaningFee}
+                serviceFee={LISTING_DATA.pricing.serviceFee}
+                checkInDate={bookingDates.checkInDate}
+                checkoutDate={bookingDates.checkoutDate}
+                onReserveClick={handleReserveClick}
+              />
+            </div>
           </div>
         </div>
 

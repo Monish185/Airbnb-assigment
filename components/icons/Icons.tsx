@@ -25,6 +25,12 @@ export const ShareIcon: React.FC<IconProps> = ({ size = 16, className = "" }) =>
   </svg>
 );
 
+export const FlagIcon: React.FC<IconProps> = ({ size = 14, className = "" }) => (
+  <svg viewBox="0 0 16 16" width={size} height={size} fill="currentColor" className={className} aria-hidden="true">
+    <path d="M1 1h2v14H1V1zm3 1h10l-2 4 2 4H4V2z" />
+  </svg>
+);
+
 export const HeartIcon: React.FC<IconProps & { filled?: boolean }> = ({ size = 16, className = "", filled = false }) => (
   <svg
     viewBox="0 0 32 32"

@@ -219,4 +219,30 @@ same when we click on share, share options appears in bottom
   - Captured verification screenshot in `qa/share_toast_visible.png`.
 - Compiled clean production build and committed to `main`.
 
+---
+
+## User Prompt #13
+```text
+the card looks like this and sticky in original
+```
+
+### Action Taken:
+- Analyzed user screenshot showing the booking card design tokens and sticky scroll behavior.
+- Updated `BookingCard.tsx` for 100% visual parity:
+  - Header: Underlined bold price `₹28,499` followed by `for 5 nights` (or dynamic calculation matching nights).
+  - Date Box: Check-in (`10/18/2026`) and Checkout (`10/23/2026`) formatted as `MM/DD/YYYY`.
+  - Guests: `2 guests` selector with chevron down.
+  - Cancellation notice banner: Soft gray pill `Free cancellation before 17 October` (with `17 October` in bold, dynamically derived as 1 day prior to check-in).
+  - Button: Pill-shaped `rounded-full` in vibrant Airbnb magenta (`#E00B41`), white bold text `Reserve`.
+  - Micro-copy: Centered `You won't be charged yet`.
+  - Card footer: Added `Report this listing` with the flag icon (`FlagIcon`) beneath the card container.
+  - Removed unwanted promo banner and default cost breakdown to match screenshot.
+- Resolved sticky layout behavior in `app/page.tsx`:
+  - Removed `items-start` from the outer CSS Grid container so the right column spans the full vertical height of the left column.
+  - Wrapped card in `sticky top-28 self-start w-full max-w-[370px] ml-auto`.
+- Verified sticky behavior across scroll depths (0px, 800px, 1400px) with Playwright test (`qa/verify_card_sticky.js`), verifying constant `top: 112px` viewport offset.
+- Captured visual verification screenshots (`qa/booking_card_top_verified.png`, `qa/booking_card_scrolled_verified.png`).
+- Compiled clean production build and committed to `main`.
+
+
 

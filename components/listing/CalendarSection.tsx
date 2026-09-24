@@ -69,8 +69,8 @@ export const CalendarSection: React.FC<CalendarSectionProps> = ({
       setEndDate(null);
       if (onDatesChange) {
         onDatesChange({
-          checkInDate: `${String(clicked.day).padStart(2, "0")}/${String(
-            clicked.month
+          checkInDate: `${String(clicked.month).padStart(2, "0")}/${String(
+            clicked.day
           ).padStart(2, "0")}/${clicked.year}`,
           checkoutDate: "Add date",
           nights: 0,
@@ -85,11 +85,11 @@ export const CalendarSection: React.FC<CalendarSectionProps> = ({
               (1000 * 60 * 60 * 24)
           );
           onDatesChange({
-            checkInDate: `${String(startDate.day).padStart(2, "0")}/${String(
-              startDate.month
+            checkInDate: `${String(startDate.month).padStart(2, "0")}/${String(
+              startDate.day
             ).padStart(2, "0")}/${startDate.year}`,
-            checkoutDate: `${String(clicked.day).padStart(2, "0")}/${String(
-              clicked.month
+            checkoutDate: `${String(clicked.month).padStart(2, "0")}/${String(
+              clicked.day
             ).padStart(2, "0")}/${clicked.year}`,
             nights,
           });
@@ -100,8 +100,8 @@ export const CalendarSection: React.FC<CalendarSectionProps> = ({
         setEndDate(null);
         if (onDatesChange) {
           onDatesChange({
-            checkInDate: `${String(clicked.day).padStart(2, "0")}/${String(
-              clicked.month
+            checkInDate: `${String(clicked.month).padStart(2, "0")}/${String(
+              clicked.day
             ).padStart(2, "0")}/${clicked.year}`,
             checkoutDate: "Add date",
             nights: 0,
