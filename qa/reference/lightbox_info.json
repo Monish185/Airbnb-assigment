@@ -1,0 +1,464 @@
+{
+  "buttons": [
+    {
+      "text": "Become a host",
+      "ariaLabel": null
+    },
+    {
+      "text": "",
+      "ariaLabel": "Choose language and currency"
+    },
+    {
+      "text": "",
+      "ariaLabel": "Main navigation menu"
+    },
+    {
+      "text": "Share",
+      "ariaLabel": null
+    },
+    {
+      "text": "Save",
+      "ariaLabel": null
+    },
+    {
+      "text": "Show all photos",
+      "ariaLabel": null
+    },
+    {
+      "text": "",
+      "ariaLabel": "Previous photo"
+    },
+    {
+      "text": "",
+      "ariaLabel": "Next photo"
+    },
+    {
+      "text": "19\nReviews",
+      "ariaLabel": null
+    },
+    {
+      "text": "Show original",
+      "ariaLabel": null
+    },
+    {
+      "text": "Show more",
+      "ariaLabel": null
+    },
+    {
+      "text": "Show all 50 amenities",
+      "ariaLabel": null
+    },
+    {
+      "text": "Clear dates",
+      "ariaLabel": null
+    },
+    {
+      "text": "",
+      "ariaLabel": null
+    },
+    {
+      "text": "1",
+      "ariaLabel": null
+    },
+    {
+      "text": "2",
+      "ariaLabel": null
+    },
+    {
+      "text": "3",
+      "ariaLabel": null
+    },
+    {
+      "text": "4",
+      "ariaLabel": null
+    },
+    {
+      "text": "5",
+      "ariaLabel": null
+    },
+    {
+      "text": "6",
+      "ariaLabel": null
+    },
+    {
+      "text": "7",
+      "ariaLabel": null
+    },
+    {
+      "text": "8",
+      "ariaLabel": null
+    },
+    {
+      "text": "9",
+      "ariaLabel": null
+    },
+    {
+      "text": "10",
+      "ariaLabel": null
+    },
+    {
+      "text": "11",
+      "ariaLabel": null
+    },
+    {
+      "text": "12",
+      "ariaLabel": null
+    },
+    {
+      "text": "13",
+      "ariaLabel": null
+    },
+    {
+      "text": "14",
+      "ariaLabel": null
+    },
+    {
+      "text": "15",
+      "ariaLabel": null
+    },
+    {
+      "text": "16",
+      "ariaLabel": null
+    },
+    {
+      "text": "17",
+      "ariaLabel": null
+    },
+    {
+      "text": "18",
+      "ariaLabel": null
+    },
+    {
+      "text": "19",
+      "ariaLabel": null
+    },
+    {
+      "text": "20",
+      "ariaLabel": null
+    },
+    {
+      "text": "21",
+      "ariaLabel": null
+    },
+    {
+      "text": "22",
+      "ariaLabel": null
+    },
+    {
+      "text": "23",
+      "ariaLabel": null
+    },
+    {
+      "text": "24",
+      "ariaLabel": null
+    },
+    {
+      "text": "25",
+      "ariaLabel": null
+    },
+    {
+      "text": "26",
+      "ariaLabel": null
+    },
+    {
+      "text": "27",
+      "ariaLabel": null
+    },
+    {
+      "text": "28",
+      "ariaLabel": null
+    },
+    {
+      "text": "29",
+      "ariaLabel": null
+    },
+    {
+      "text": "30",
+      "ariaLabel": null
+    },
+    {
+      "text": "31",
+      "ariaLabel": null
+    },
+    {
+      "text": "",
+      "ariaLabel": null
+    },
+    {
+      "text": "1",
+      "ariaLabel": null
+    },
+    {
+      "text": "2",
+      "ariaLabel": null
+    },
+    {
+      "text": "3",
+      "ariaLabel": null
+    },
+    {
+      "text": "4",
+      "ariaLabel": null
+    },
+    {
+      "text": "5",
+      "ariaLabel": null
+    },
+    {
+      "text": "6",
+      "ariaLabel": null
+    },
+    {
+      "text": "7",
+      "ariaLabel": null
+    },
+    {
+      "text": "8",
+      "ariaLabel": null
+    },
+    {
+      "text": "9",
+      "ariaLabel": null
+    },
+    {
+      "text": "10",
+      "ariaLabel": null
+    },
+    {
+      "text": "11",
+      "ariaLabel": null
+    },
+    {
+      "text": "12",
+      "ariaLabel": null
+    },
+    {
+      "text": "13",
+      "ariaLabel": null
+    },
+    {
+      "text": "14",
+      "ariaLabel": null
+    },
+    {
+      "text": "15",
+      "ariaLabel": null
+    },
+    {
+      "text": "16",
+      "ariaLabel": null
+    },
+    {
+      "text": "17",
+      "ariaLabel": null
+    },
+    {
+      "text": "18",
+      "ariaLabel": null
+    },
+    {
+      "text": "19",
+      "ariaLabel": null
+    },
+    {
+      "text": "20",
+      "ariaLabel": null
+    },
+    {
+      "text": "21",
+      "ariaLabel": null
+    },
+    {
+      "text": "22",
+      "ariaLabel": null
+    },
+    {
+      "text": "23",
+      "ariaLabel": null
+    },
+    {
+      "text": "24",
+      "ariaLabel": null
+    },
+    {
+      "text": "25",
+      "ariaLabel": null
+    },
+    {
+      "text": "26",
+      "ariaLabel": null
+    },
+    {
+      "text": "27",
+      "ariaLabel": null
+    },
+    {
+      "text": "28",
+      "ariaLabel": null
+    },
+    {
+      "text": "29",
+      "ariaLabel": null
+    },
+    {
+      "text": "30",
+      "ariaLabel": null
+    },
+    {
+      "text": "",
+      "ariaLabel": "Keyboard shortcuts"
+    },
+    {
+      "text": "Terms apply",
+      "ariaLabel": null
+    },
+    {
+      "text": "Claim",
+      "ariaLabel": null
+    },
+    {
+      "text": "CHECK-IN\n18/10/2026",
+      "ariaLabel": null
+    },
+    {
+      "text": "CHECKOUT\n23/10/2026",
+      "ariaLabel": null
+    },
+    {
+      "text": "GUESTS\n1 guest",
+      "ariaLabel": null
+    },
+    {
+      "text": "Reserve",
+      "ariaLabel": null
+    },
+    {
+      "text": "18/10/2026 – 23/10/2026",
+      "ariaLabel": null
+    },
+    {
+      "text": "Reserve",
+      "ariaLabel": null
+    },
+    {
+      "text": "How reviews work",
+      "ariaLabel": null
+    },
+    {
+      "text": "Comfort 6",
+      "ariaLabel": null
+    },
+    {
+      "text": "Accuracy 5",
+      "ariaLabel": null
+    },
+    {
+      "text": "Hot tub 5",
+      "ariaLabel": null
+    },
+    {
+      "text": "Condition 4",
+      "ariaLabel": null
+    },
+    {
+      "text": "Hospitality 4",
+      "ariaLabel": null
+    },
+    {
+      "text": "Show all 19 reviews",
+      "ariaLabel": null
+    },
+    {
+      "text": "",
+      "ariaLabel": "Zoom in"
+    },
+    {
+      "text": "",
+      "ariaLabel": "Zoom out"
+    },
+    {
+      "text": "Show more",
+      "ariaLabel": null
+    },
+    {
+      "text": "Message host",
+      "ariaLabel": null
+    },
+    {
+      "text": "Learn more",
+      "ariaLabel": null
+    },
+    {
+      "text": "Learn more",
+      "ariaLabel": null
+    },
+    {
+      "text": "Learn more",
+      "ariaLabel": null
+    },
+    {
+      "text": "",
+      "ariaLabel": "Previous stays"
+    },
+    {
+      "text": "",
+      "ariaLabel": "Next stays"
+    },
+    {
+      "text": "",
+      "ariaLabel": "Save Beautiful Studio with a view to die for"
+    },
+    {
+      "text": "",
+      "ariaLabel": "Save NAQAB - 1bhk with private pool"
+    },
+    {
+      "text": "",
+      "ariaLabel": "Close photo tour"
+    },
+    {
+      "text": "",
+      "ariaLabel": "Share listing"
+    },
+    {
+      "text": "",
+      "ariaLabel": "Save listing"
+    },
+    {
+      "text": "Living room 1",
+      "ariaLabel": null
+    },
+    {
+      "text": "Living room 2",
+      "ariaLabel": null
+    },
+    {
+      "text": "Full kitchen",
+      "ariaLabel": null
+    },
+    {
+      "text": "Bedroom",
+      "ariaLabel": null
+    },
+    {
+      "text": "Full bathroom",
+      "ariaLabel": null
+    },
+    {
+      "text": "Gym",
+      "ariaLabel": null
+    },
+    {
+      "text": "Exterior",
+      "ariaLabel": null
+    },
+    {
+      "text": "Pool",
+      "ariaLabel": null
+    },
+    {
+      "text": "Additional photos",
+      "ariaLabel": null
+    }
+  ]
+}

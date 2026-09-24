@@ -1,0 +1,605 @@
+{
+  "categoryEls": [
+    {
+      "text": "",
+      "ariaLabel": "Close photo tour",
+      "tag": "BUTTON",
+      "classes": "p-2.5 hover:bg-[#F7F7F7] rounded-full transition-colors -ml-2 text-[#222222] focus:outline-none"
+    },
+    {
+      "text": "",
+      "ariaLabel": "Share listing",
+      "tag": "BUTTON",
+      "classes": "p-2.5 hover:bg-[#F7F7F7] rounded-full transition-colors text-[#222222] focus:outline-none"
+    },
+    {
+      "text": "",
+      "ariaLabel": "Save listing",
+      "tag": "BUTTON",
+      "classes": "p-2.5 hover:bg-[#F7F7F7] rounded-full transition-colors text-[#222222] focus:outline-none"
+    },
+    {
+      "text": "Living room 1",
+      "ariaLabel": null,
+      "tag": "BUTTON",
+      "classes": "flex flex-col items-start text-left group focus:outline-none w-full cursor-pointer"
+    },
+    {
+      "text": "Living room 2",
+      "ariaLabel": null,
+      "tag": "BUTTON",
+      "classes": "flex flex-col items-start text-left group focus:outline-none w-full cursor-pointer"
+    },
+    {
+      "text": "Full kitchen",
+      "ariaLabel": null,
+      "tag": "BUTTON",
+      "classes": "flex flex-col items-start text-left group focus:outline-none w-full cursor-pointer"
+    },
+    {
+      "text": "Bedroom",
+      "ariaLabel": null,
+      "tag": "BUTTON",
+      "classes": "flex flex-col items-start text-left group focus:outline-none w-full cursor-pointer"
+    },
+    {
+      "text": "Full bathroom",
+      "ariaLabel": null,
+      "tag": "BUTTON",
+      "classes": "flex flex-col items-start text-left group focus:outline-none w-full cursor-pointer"
+    },
+    {
+      "text": "Gym",
+      "ariaLabel": null,
+      "tag": "BUTTON",
+      "classes": "flex flex-col items-start text-left group focus:outline-none w-full cursor-pointer"
+    },
+    {
+      "text": "Exterior",
+      "ariaLabel": null,
+      "tag": "BUTTON",
+      "classes": "flex flex-col items-start text-left group focus:outline-none w-full cursor-pointer"
+    },
+    {
+      "text": "Pool",
+      "ariaLabel": null,
+      "tag": "BUTTON",
+      "classes": "flex flex-col items-start text-left group focus:outline-none w-full cursor-pointer"
+    },
+    {
+      "text": "Additional photos",
+      "ariaLabel": null,
+      "tag": "BUTTON",
+      "classes": "flex flex-col items-start text-left group focus:outline-none w-full cursor-pointer"
+    },
+    {
+      "text": "",
+      "ariaLabel": null,
+      "tag": "DIV",
+      "classes": "w-full aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "text": "",
+      "ariaLabel": null,
+      "tag": "DIV",
+      "classes": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "text": "",
+      "ariaLabel": null,
+      "tag": "DIV",
+      "classes": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "text": "",
+      "ariaLabel": null,
+      "tag": "DIV",
+      "classes": "w-full aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "text": "",
+      "ariaLabel": null,
+      "tag": "DIV",
+      "classes": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "text": "",
+      "ariaLabel": null,
+      "tag": "DIV",
+      "classes": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "text": "",
+      "ariaLabel": null,
+      "tag": "DIV",
+      "classes": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "text": "",
+      "ariaLabel": null,
+      "tag": "DIV",
+      "classes": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    }
+  ],
+  "sections": [
+    {
+      "tag": "H2",
+      "text": "Photo tour"
+    },
+    {
+      "tag": "H3",
+      "text": "Living room 1"
+    },
+    {
+      "tag": "H3",
+      "text": "Living room 2"
+    },
+    {
+      "tag": "H3",
+      "text": "Full kitchen"
+    },
+    {
+      "tag": "H3",
+      "text": "Bedroom"
+    },
+    {
+      "tag": "H3",
+      "text": "Full bathroom"
+    },
+    {
+      "tag": "H3",
+      "text": "Gym"
+    },
+    {
+      "tag": "H3",
+      "text": "Exterior"
+    },
+    {
+      "tag": "H3",
+      "text": "Pool"
+    },
+    {
+      "tag": "H3",
+      "text": "Additional photos"
+    }
+  ],
+  "modalImagesCount": 52,
+  "sampleImages": [
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_01.jpg",
+      "alt": "Living room 1",
+      "classes": "w-full h-full object-cover group-hover:scale-105 transition-transform duration-300",
+      "parentElementTag": "DIV",
+      "parentClasses": "w-full h-[105px] rounded-[8px] overflow-hidden bg-gray-100 mb-1.5"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_04.jpg",
+      "alt": "Living room 2",
+      "classes": "w-full h-full object-cover group-hover:scale-105 transition-transform duration-300",
+      "parentElementTag": "DIV",
+      "parentClasses": "w-full h-[105px] rounded-[8px] overflow-hidden bg-gray-100 mb-1.5"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_11.jpg",
+      "alt": "Full kitchen",
+      "classes": "w-full h-full object-cover group-hover:scale-105 transition-transform duration-300",
+      "parentElementTag": "DIV",
+      "parentClasses": "w-full h-[105px] rounded-[8px] overflow-hidden bg-gray-100 mb-1.5"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_13.jpg",
+      "alt": "Bedroom",
+      "classes": "w-full h-full object-cover group-hover:scale-105 transition-transform duration-300",
+      "parentElementTag": "DIV",
+      "parentClasses": "w-full h-[105px] rounded-[8px] overflow-hidden bg-gray-100 mb-1.5"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_19.jpg",
+      "alt": "Full bathroom",
+      "classes": "w-full h-full object-cover group-hover:scale-105 transition-transform duration-300",
+      "parentElementTag": "DIV",
+      "parentClasses": "w-full h-[105px] rounded-[8px] overflow-hidden bg-gray-100 mb-1.5"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_20.jpg",
+      "alt": "Gym",
+      "classes": "w-full h-full object-cover group-hover:scale-105 transition-transform duration-300",
+      "parentElementTag": "DIV",
+      "parentClasses": "w-full h-[105px] rounded-[8px] overflow-hidden bg-gray-100 mb-1.5"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_25.jpg",
+      "alt": "Exterior",
+      "classes": "w-full h-full object-cover group-hover:scale-105 transition-transform duration-300",
+      "parentElementTag": "DIV",
+      "parentClasses": "w-full h-[105px] rounded-[8px] overflow-hidden bg-gray-100 mb-1.5"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_31.jpg",
+      "alt": "Pool",
+      "classes": "w-full h-full object-cover group-hover:scale-105 transition-transform duration-300",
+      "parentElementTag": "DIV",
+      "parentClasses": "w-full h-[105px] rounded-[8px] overflow-hidden bg-gray-100 mb-1.5"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_34.jpg",
+      "alt": "Additional photos",
+      "classes": "w-full h-full object-cover group-hover:scale-105 transition-transform duration-300",
+      "parentElementTag": "DIV",
+      "parentClasses": "w-full h-[105px] rounded-[8px] overflow-hidden bg-gray-100 mb-1.5"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_01.jpg",
+      "alt": "Living room 1 photo 1",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "w-full aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    }
+  ],
+  "allImages": [
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_01.jpg",
+      "alt": "Living room 1",
+      "classes": "w-full h-full object-cover group-hover:scale-105 transition-transform duration-300",
+      "parentElementTag": "DIV",
+      "parentClasses": "w-full h-[105px] rounded-[8px] overflow-hidden bg-gray-100 mb-1.5"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_04.jpg",
+      "alt": "Living room 2",
+      "classes": "w-full h-full object-cover group-hover:scale-105 transition-transform duration-300",
+      "parentElementTag": "DIV",
+      "parentClasses": "w-full h-[105px] rounded-[8px] overflow-hidden bg-gray-100 mb-1.5"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_11.jpg",
+      "alt": "Full kitchen",
+      "classes": "w-full h-full object-cover group-hover:scale-105 transition-transform duration-300",
+      "parentElementTag": "DIV",
+      "parentClasses": "w-full h-[105px] rounded-[8px] overflow-hidden bg-gray-100 mb-1.5"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_13.jpg",
+      "alt": "Bedroom",
+      "classes": "w-full h-full object-cover group-hover:scale-105 transition-transform duration-300",
+      "parentElementTag": "DIV",
+      "parentClasses": "w-full h-[105px] rounded-[8px] overflow-hidden bg-gray-100 mb-1.5"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_19.jpg",
+      "alt": "Full bathroom",
+      "classes": "w-full h-full object-cover group-hover:scale-105 transition-transform duration-300",
+      "parentElementTag": "DIV",
+      "parentClasses": "w-full h-[105px] rounded-[8px] overflow-hidden bg-gray-100 mb-1.5"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_20.jpg",
+      "alt": "Gym",
+      "classes": "w-full h-full object-cover group-hover:scale-105 transition-transform duration-300",
+      "parentElementTag": "DIV",
+      "parentClasses": "w-full h-[105px] rounded-[8px] overflow-hidden bg-gray-100 mb-1.5"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_25.jpg",
+      "alt": "Exterior",
+      "classes": "w-full h-full object-cover group-hover:scale-105 transition-transform duration-300",
+      "parentElementTag": "DIV",
+      "parentClasses": "w-full h-[105px] rounded-[8px] overflow-hidden bg-gray-100 mb-1.5"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_31.jpg",
+      "alt": "Pool",
+      "classes": "w-full h-full object-cover group-hover:scale-105 transition-transform duration-300",
+      "parentElementTag": "DIV",
+      "parentClasses": "w-full h-[105px] rounded-[8px] overflow-hidden bg-gray-100 mb-1.5"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_34.jpg",
+      "alt": "Additional photos",
+      "classes": "w-full h-full object-cover group-hover:scale-105 transition-transform duration-300",
+      "parentElementTag": "DIV",
+      "parentClasses": "w-full h-[105px] rounded-[8px] overflow-hidden bg-gray-100 mb-1.5"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_01.jpg",
+      "alt": "Living room 1 photo 1",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "w-full aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_02.jpg",
+      "alt": "Living room 1 photo 2",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_03.jpg",
+      "alt": "Living room 1 photo 3",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_04.jpg",
+      "alt": "Living room 2 photo 1",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "w-full aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_05.jpg",
+      "alt": "Living room 2 photo 2",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_06.jpg",
+      "alt": "Living room 2 photo 3",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_07.jpg",
+      "alt": "Living room 2 photo 4",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_08.jpg",
+      "alt": "Living room 2 photo 5",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_09.jpg",
+      "alt": "Living room 2 photo 6",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_10.jpg",
+      "alt": "Living room 2 photo 7",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_11.jpg",
+      "alt": "Full kitchen photo 1",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "w-full aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_12.jpg",
+      "alt": "Full kitchen photo 2",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_13.jpg",
+      "alt": "Bedroom photo 1",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "w-full aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_14.jpg",
+      "alt": "Bedroom photo 2",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_15.jpg",
+      "alt": "Bedroom photo 3",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_16.jpg",
+      "alt": "Bedroom photo 4",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_17.jpg",
+      "alt": "Bedroom photo 5",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_18.jpg",
+      "alt": "Bedroom photo 6",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_19.jpg",
+      "alt": "Full bathroom photo 1",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "w-full aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_20.jpg",
+      "alt": "Gym photo 1",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "w-full aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_21.jpg",
+      "alt": "Gym photo 2",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_22.jpg",
+      "alt": "Gym photo 3",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_23.jpg",
+      "alt": "Gym photo 4",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_24.jpg",
+      "alt": "Gym photo 5",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_25.jpg",
+      "alt": "Exterior photo 1",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "w-full aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_26.jpg",
+      "alt": "Exterior photo 2",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_27.jpg",
+      "alt": "Exterior photo 3",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_28.jpg",
+      "alt": "Exterior photo 4",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_29.jpg",
+      "alt": "Exterior photo 5",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_30.jpg",
+      "alt": "Exterior photo 6",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_31.jpg",
+      "alt": "Pool photo 1",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "w-full aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_32.jpg",
+      "alt": "Pool photo 2",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_33.jpg",
+      "alt": "Pool photo 3",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_34.jpg",
+      "alt": "Additional photos photo 1",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "w-full aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_35.jpg",
+      "alt": "Additional photos photo 2",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_36.jpg",
+      "alt": "Additional photos photo 3",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_37.jpg",
+      "alt": "Additional photos photo 4",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_38.jpg",
+      "alt": "Additional photos photo 5",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_39.jpg",
+      "alt": "Additional photos photo 6",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_40.jpg",
+      "alt": "Additional photos photo 7",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_41.jpg",
+      "alt": "Additional photos photo 8",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_42.jpg",
+      "alt": "Additional photos photo 9",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    },
+    {
+      "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_43.jpg",
+      "alt": "Additional photos photo 10",
+      "classes": "w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]",
+      "parentElementTag": "DIV",
+      "parentClasses": "aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+    }
+  ]
+}

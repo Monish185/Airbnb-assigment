@@ -1,0 +1,1937 @@
+[
+  {
+    "title": "Living room 1",
+    "subtitle": "Sofa · Air conditioning · Ceiling fan · TV",
+    "id": "photo-tour-content",
+    "images": [
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_01.jpg",
+        "alt": "Living room 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_04.jpg",
+        "alt": "Living room 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_11.jpg",
+        "alt": "Full kitchen"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_13.jpg",
+        "alt": "Bedroom"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_19.jpg",
+        "alt": "Full bathroom"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_20.jpg",
+        "alt": "Gym"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_25.jpg",
+        "alt": "Exterior"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_31.jpg",
+        "alt": "Pool"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_34.jpg",
+        "alt": "Additional photos"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_01.jpg",
+        "alt": "Living room 1 photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_02.jpg",
+        "alt": "Living room 1 photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_03.jpg",
+        "alt": "Living room 1 photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_04.jpg",
+        "alt": "Living room 2 photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_05.jpg",
+        "alt": "Living room 2 photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_06.jpg",
+        "alt": "Living room 2 photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_07.jpg",
+        "alt": "Living room 2 photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_08.jpg",
+        "alt": "Living room 2 photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_09.jpg",
+        "alt": "Living room 2 photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_10.jpg",
+        "alt": "Living room 2 photo 7"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_11.jpg",
+        "alt": "Full kitchen photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_12.jpg",
+        "alt": "Full kitchen photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_13.jpg",
+        "alt": "Bedroom photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_14.jpg",
+        "alt": "Bedroom photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_15.jpg",
+        "alt": "Bedroom photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_16.jpg",
+        "alt": "Bedroom photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_17.jpg",
+        "alt": "Bedroom photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_18.jpg",
+        "alt": "Bedroom photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_19.jpg",
+        "alt": "Full bathroom photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_20.jpg",
+        "alt": "Gym photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_21.jpg",
+        "alt": "Gym photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_22.jpg",
+        "alt": "Gym photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_23.jpg",
+        "alt": "Gym photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_24.jpg",
+        "alt": "Gym photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_25.jpg",
+        "alt": "Exterior photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_26.jpg",
+        "alt": "Exterior photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_27.jpg",
+        "alt": "Exterior photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_28.jpg",
+        "alt": "Exterior photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_29.jpg",
+        "alt": "Exterior photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_30.jpg",
+        "alt": "Exterior photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_31.jpg",
+        "alt": "Pool photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_32.jpg",
+        "alt": "Pool photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_33.jpg",
+        "alt": "Pool photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_34.jpg",
+        "alt": "Additional photos photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_35.jpg",
+        "alt": "Additional photos photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_36.jpg",
+        "alt": "Additional photos photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_37.jpg",
+        "alt": "Additional photos photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_38.jpg",
+        "alt": "Additional photos photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_39.jpg",
+        "alt": "Additional photos photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_40.jpg",
+        "alt": "Additional photos photo 7"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_41.jpg",
+        "alt": "Additional photos photo 8"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_42.jpg",
+        "alt": "Additional photos photo 9"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_43.jpg",
+        "alt": "Additional photos photo 10"
+      }
+    ]
+  },
+  {
+    "title": "Living room 2",
+    "subtitle": "Ceiling fan · Hot tub",
+    "id": "photo-tour-content",
+    "images": [
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_01.jpg",
+        "alt": "Living room 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_04.jpg",
+        "alt": "Living room 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_11.jpg",
+        "alt": "Full kitchen"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_13.jpg",
+        "alt": "Bedroom"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_19.jpg",
+        "alt": "Full bathroom"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_20.jpg",
+        "alt": "Gym"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_25.jpg",
+        "alt": "Exterior"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_31.jpg",
+        "alt": "Pool"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_34.jpg",
+        "alt": "Additional photos"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_01.jpg",
+        "alt": "Living room 1 photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_02.jpg",
+        "alt": "Living room 1 photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_03.jpg",
+        "alt": "Living room 1 photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_04.jpg",
+        "alt": "Living room 2 photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_05.jpg",
+        "alt": "Living room 2 photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_06.jpg",
+        "alt": "Living room 2 photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_07.jpg",
+        "alt": "Living room 2 photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_08.jpg",
+        "alt": "Living room 2 photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_09.jpg",
+        "alt": "Living room 2 photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_10.jpg",
+        "alt": "Living room 2 photo 7"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_11.jpg",
+        "alt": "Full kitchen photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_12.jpg",
+        "alt": "Full kitchen photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_13.jpg",
+        "alt": "Bedroom photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_14.jpg",
+        "alt": "Bedroom photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_15.jpg",
+        "alt": "Bedroom photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_16.jpg",
+        "alt": "Bedroom photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_17.jpg",
+        "alt": "Bedroom photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_18.jpg",
+        "alt": "Bedroom photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_19.jpg",
+        "alt": "Full bathroom photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_20.jpg",
+        "alt": "Gym photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_21.jpg",
+        "alt": "Gym photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_22.jpg",
+        "alt": "Gym photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_23.jpg",
+        "alt": "Gym photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_24.jpg",
+        "alt": "Gym photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_25.jpg",
+        "alt": "Exterior photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_26.jpg",
+        "alt": "Exterior photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_27.jpg",
+        "alt": "Exterior photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_28.jpg",
+        "alt": "Exterior photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_29.jpg",
+        "alt": "Exterior photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_30.jpg",
+        "alt": "Exterior photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_31.jpg",
+        "alt": "Pool photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_32.jpg",
+        "alt": "Pool photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_33.jpg",
+        "alt": "Pool photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_34.jpg",
+        "alt": "Additional photos photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_35.jpg",
+        "alt": "Additional photos photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_36.jpg",
+        "alt": "Additional photos photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_37.jpg",
+        "alt": "Additional photos photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_38.jpg",
+        "alt": "Additional photos photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_39.jpg",
+        "alt": "Additional photos photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_40.jpg",
+        "alt": "Additional photos photo 7"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_41.jpg",
+        "alt": "Additional photos photo 8"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_42.jpg",
+        "alt": "Additional photos photo 9"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_43.jpg",
+        "alt": "Additional photos photo 10"
+      }
+    ]
+  },
+  {
+    "title": "Full kitchen",
+    "subtitle": "Freezer · Fridge · Blender · Cooker · Cooking basics · Kettle · Microwave · Toaster · Wine glasses · Coffee · Crockery and cutlery",
+    "id": "photo-tour-content",
+    "images": [
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_01.jpg",
+        "alt": "Living room 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_04.jpg",
+        "alt": "Living room 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_11.jpg",
+        "alt": "Full kitchen"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_13.jpg",
+        "alt": "Bedroom"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_19.jpg",
+        "alt": "Full bathroom"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_20.jpg",
+        "alt": "Gym"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_25.jpg",
+        "alt": "Exterior"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_31.jpg",
+        "alt": "Pool"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_34.jpg",
+        "alt": "Additional photos"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_01.jpg",
+        "alt": "Living room 1 photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_02.jpg",
+        "alt": "Living room 1 photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_03.jpg",
+        "alt": "Living room 1 photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_04.jpg",
+        "alt": "Living room 2 photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_05.jpg",
+        "alt": "Living room 2 photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_06.jpg",
+        "alt": "Living room 2 photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_07.jpg",
+        "alt": "Living room 2 photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_08.jpg",
+        "alt": "Living room 2 photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_09.jpg",
+        "alt": "Living room 2 photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_10.jpg",
+        "alt": "Living room 2 photo 7"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_11.jpg",
+        "alt": "Full kitchen photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_12.jpg",
+        "alt": "Full kitchen photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_13.jpg",
+        "alt": "Bedroom photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_14.jpg",
+        "alt": "Bedroom photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_15.jpg",
+        "alt": "Bedroom photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_16.jpg",
+        "alt": "Bedroom photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_17.jpg",
+        "alt": "Bedroom photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_18.jpg",
+        "alt": "Bedroom photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_19.jpg",
+        "alt": "Full bathroom photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_20.jpg",
+        "alt": "Gym photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_21.jpg",
+        "alt": "Gym photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_22.jpg",
+        "alt": "Gym photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_23.jpg",
+        "alt": "Gym photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_24.jpg",
+        "alt": "Gym photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_25.jpg",
+        "alt": "Exterior photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_26.jpg",
+        "alt": "Exterior photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_27.jpg",
+        "alt": "Exterior photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_28.jpg",
+        "alt": "Exterior photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_29.jpg",
+        "alt": "Exterior photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_30.jpg",
+        "alt": "Exterior photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_31.jpg",
+        "alt": "Pool photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_32.jpg",
+        "alt": "Pool photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_33.jpg",
+        "alt": "Pool photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_34.jpg",
+        "alt": "Additional photos photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_35.jpg",
+        "alt": "Additional photos photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_36.jpg",
+        "alt": "Additional photos photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_37.jpg",
+        "alt": "Additional photos photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_38.jpg",
+        "alt": "Additional photos photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_39.jpg",
+        "alt": "Additional photos photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_40.jpg",
+        "alt": "Additional photos photo 7"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_41.jpg",
+        "alt": "Additional photos photo 8"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_42.jpg",
+        "alt": "Additional photos photo 9"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_43.jpg",
+        "alt": "Additional photos photo 10"
+      }
+    ]
+  },
+  {
+    "title": "Bedroom",
+    "subtitle": "Double bed · Air conditioning · Bed linen · Ceiling fan · Clothes storage · Cot · Hangers · Iron · Room-darkening blinds · Cleaning available during stay · Cleaning products · Long-term stays allowed · Private entrance · Wifi",
+    "id": "photo-tour-content",
+    "images": [
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_01.jpg",
+        "alt": "Living room 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_04.jpg",
+        "alt": "Living room 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_11.jpg",
+        "alt": "Full kitchen"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_13.jpg",
+        "alt": "Bedroom"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_19.jpg",
+        "alt": "Full bathroom"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_20.jpg",
+        "alt": "Gym"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_25.jpg",
+        "alt": "Exterior"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_31.jpg",
+        "alt": "Pool"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_34.jpg",
+        "alt": "Additional photos"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_01.jpg",
+        "alt": "Living room 1 photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_02.jpg",
+        "alt": "Living room 1 photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_03.jpg",
+        "alt": "Living room 1 photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_04.jpg",
+        "alt": "Living room 2 photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_05.jpg",
+        "alt": "Living room 2 photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_06.jpg",
+        "alt": "Living room 2 photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_07.jpg",
+        "alt": "Living room 2 photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_08.jpg",
+        "alt": "Living room 2 photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_09.jpg",
+        "alt": "Living room 2 photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_10.jpg",
+        "alt": "Living room 2 photo 7"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_11.jpg",
+        "alt": "Full kitchen photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_12.jpg",
+        "alt": "Full kitchen photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_13.jpg",
+        "alt": "Bedroom photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_14.jpg",
+        "alt": "Bedroom photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_15.jpg",
+        "alt": "Bedroom photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_16.jpg",
+        "alt": "Bedroom photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_17.jpg",
+        "alt": "Bedroom photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_18.jpg",
+        "alt": "Bedroom photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_19.jpg",
+        "alt": "Full bathroom photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_20.jpg",
+        "alt": "Gym photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_21.jpg",
+        "alt": "Gym photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_22.jpg",
+        "alt": "Gym photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_23.jpg",
+        "alt": "Gym photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_24.jpg",
+        "alt": "Gym photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_25.jpg",
+        "alt": "Exterior photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_26.jpg",
+        "alt": "Exterior photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_27.jpg",
+        "alt": "Exterior photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_28.jpg",
+        "alt": "Exterior photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_29.jpg",
+        "alt": "Exterior photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_30.jpg",
+        "alt": "Exterior photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_31.jpg",
+        "alt": "Pool photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_32.jpg",
+        "alt": "Pool photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_33.jpg",
+        "alt": "Pool photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_34.jpg",
+        "alt": "Additional photos photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_35.jpg",
+        "alt": "Additional photos photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_36.jpg",
+        "alt": "Additional photos photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_37.jpg",
+        "alt": "Additional photos photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_38.jpg",
+        "alt": "Additional photos photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_39.jpg",
+        "alt": "Additional photos photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_40.jpg",
+        "alt": "Additional photos photo 7"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_41.jpg",
+        "alt": "Additional photos photo 8"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_42.jpg",
+        "alt": "Additional photos photo 9"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_43.jpg",
+        "alt": "Additional photos photo 10"
+      }
+    ]
+  },
+  {
+    "title": "Full bathroom",
+    "subtitle": "Hairdryer · Hot water · Shampoo · Shower gel",
+    "id": "photo-tour-content",
+    "images": [
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_01.jpg",
+        "alt": "Living room 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_04.jpg",
+        "alt": "Living room 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_11.jpg",
+        "alt": "Full kitchen"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_13.jpg",
+        "alt": "Bedroom"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_19.jpg",
+        "alt": "Full bathroom"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_20.jpg",
+        "alt": "Gym"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_25.jpg",
+        "alt": "Exterior"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_31.jpg",
+        "alt": "Pool"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_34.jpg",
+        "alt": "Additional photos"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_01.jpg",
+        "alt": "Living room 1 photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_02.jpg",
+        "alt": "Living room 1 photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_03.jpg",
+        "alt": "Living room 1 photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_04.jpg",
+        "alt": "Living room 2 photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_05.jpg",
+        "alt": "Living room 2 photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_06.jpg",
+        "alt": "Living room 2 photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_07.jpg",
+        "alt": "Living room 2 photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_08.jpg",
+        "alt": "Living room 2 photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_09.jpg",
+        "alt": "Living room 2 photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_10.jpg",
+        "alt": "Living room 2 photo 7"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_11.jpg",
+        "alt": "Full kitchen photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_12.jpg",
+        "alt": "Full kitchen photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_13.jpg",
+        "alt": "Bedroom photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_14.jpg",
+        "alt": "Bedroom photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_15.jpg",
+        "alt": "Bedroom photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_16.jpg",
+        "alt": "Bedroom photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_17.jpg",
+        "alt": "Bedroom photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_18.jpg",
+        "alt": "Bedroom photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_19.jpg",
+        "alt": "Full bathroom photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_20.jpg",
+        "alt": "Gym photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_21.jpg",
+        "alt": "Gym photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_22.jpg",
+        "alt": "Gym photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_23.jpg",
+        "alt": "Gym photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_24.jpg",
+        "alt": "Gym photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_25.jpg",
+        "alt": "Exterior photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_26.jpg",
+        "alt": "Exterior photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_27.jpg",
+        "alt": "Exterior photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_28.jpg",
+        "alt": "Exterior photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_29.jpg",
+        "alt": "Exterior photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_30.jpg",
+        "alt": "Exterior photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_31.jpg",
+        "alt": "Pool photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_32.jpg",
+        "alt": "Pool photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_33.jpg",
+        "alt": "Pool photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_34.jpg",
+        "alt": "Additional photos photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_35.jpg",
+        "alt": "Additional photos photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_36.jpg",
+        "alt": "Additional photos photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_37.jpg",
+        "alt": "Additional photos photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_38.jpg",
+        "alt": "Additional photos photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_39.jpg",
+        "alt": "Additional photos photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_40.jpg",
+        "alt": "Additional photos photo 7"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_41.jpg",
+        "alt": "Additional photos photo 8"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_42.jpg",
+        "alt": "Additional photos photo 9"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_43.jpg",
+        "alt": "Additional photos photo 10"
+      }
+    ]
+  },
+  {
+    "title": "Gym",
+    "subtitle": "Air conditioning · Gym · Exercise equipment · Ceiling fan",
+    "id": "photo-tour-content",
+    "images": [
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_01.jpg",
+        "alt": "Living room 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_04.jpg",
+        "alt": "Living room 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_11.jpg",
+        "alt": "Full kitchen"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_13.jpg",
+        "alt": "Bedroom"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_19.jpg",
+        "alt": "Full bathroom"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_20.jpg",
+        "alt": "Gym"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_25.jpg",
+        "alt": "Exterior"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_31.jpg",
+        "alt": "Pool"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_34.jpg",
+        "alt": "Additional photos"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_01.jpg",
+        "alt": "Living room 1 photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_02.jpg",
+        "alt": "Living room 1 photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_03.jpg",
+        "alt": "Living room 1 photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_04.jpg",
+        "alt": "Living room 2 photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_05.jpg",
+        "alt": "Living room 2 photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_06.jpg",
+        "alt": "Living room 2 photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_07.jpg",
+        "alt": "Living room 2 photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_08.jpg",
+        "alt": "Living room 2 photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_09.jpg",
+        "alt": "Living room 2 photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_10.jpg",
+        "alt": "Living room 2 photo 7"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_11.jpg",
+        "alt": "Full kitchen photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_12.jpg",
+        "alt": "Full kitchen photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_13.jpg",
+        "alt": "Bedroom photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_14.jpg",
+        "alt": "Bedroom photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_15.jpg",
+        "alt": "Bedroom photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_16.jpg",
+        "alt": "Bedroom photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_17.jpg",
+        "alt": "Bedroom photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_18.jpg",
+        "alt": "Bedroom photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_19.jpg",
+        "alt": "Full bathroom photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_20.jpg",
+        "alt": "Gym photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_21.jpg",
+        "alt": "Gym photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_22.jpg",
+        "alt": "Gym photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_23.jpg",
+        "alt": "Gym photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_24.jpg",
+        "alt": "Gym photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_25.jpg",
+        "alt": "Exterior photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_26.jpg",
+        "alt": "Exterior photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_27.jpg",
+        "alt": "Exterior photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_28.jpg",
+        "alt": "Exterior photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_29.jpg",
+        "alt": "Exterior photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_30.jpg",
+        "alt": "Exterior photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_31.jpg",
+        "alt": "Pool photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_32.jpg",
+        "alt": "Pool photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_33.jpg",
+        "alt": "Pool photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_34.jpg",
+        "alt": "Additional photos photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_35.jpg",
+        "alt": "Additional photos photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_36.jpg",
+        "alt": "Additional photos photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_37.jpg",
+        "alt": "Additional photos photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_38.jpg",
+        "alt": "Additional photos photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_39.jpg",
+        "alt": "Additional photos photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_40.jpg",
+        "alt": "Additional photos photo 7"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_41.jpg",
+        "alt": "Additional photos photo 8"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_42.jpg",
+        "alt": "Additional photos photo 9"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_43.jpg",
+        "alt": "Additional photos photo 10"
+      }
+    ]
+  },
+  {
+    "title": "Exterior",
+    "subtitle": "",
+    "id": "photo-tour-content",
+    "images": [
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_01.jpg",
+        "alt": "Living room 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_04.jpg",
+        "alt": "Living room 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_11.jpg",
+        "alt": "Full kitchen"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_13.jpg",
+        "alt": "Bedroom"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_19.jpg",
+        "alt": "Full bathroom"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_20.jpg",
+        "alt": "Gym"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_25.jpg",
+        "alt": "Exterior"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_31.jpg",
+        "alt": "Pool"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_34.jpg",
+        "alt": "Additional photos"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_01.jpg",
+        "alt": "Living room 1 photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_02.jpg",
+        "alt": "Living room 1 photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_03.jpg",
+        "alt": "Living room 1 photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_04.jpg",
+        "alt": "Living room 2 photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_05.jpg",
+        "alt": "Living room 2 photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_06.jpg",
+        "alt": "Living room 2 photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_07.jpg",
+        "alt": "Living room 2 photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_08.jpg",
+        "alt": "Living room 2 photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_09.jpg",
+        "alt": "Living room 2 photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_10.jpg",
+        "alt": "Living room 2 photo 7"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_11.jpg",
+        "alt": "Full kitchen photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_12.jpg",
+        "alt": "Full kitchen photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_13.jpg",
+        "alt": "Bedroom photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_14.jpg",
+        "alt": "Bedroom photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_15.jpg",
+        "alt": "Bedroom photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_16.jpg",
+        "alt": "Bedroom photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_17.jpg",
+        "alt": "Bedroom photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_18.jpg",
+        "alt": "Bedroom photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_19.jpg",
+        "alt": "Full bathroom photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_20.jpg",
+        "alt": "Gym photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_21.jpg",
+        "alt": "Gym photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_22.jpg",
+        "alt": "Gym photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_23.jpg",
+        "alt": "Gym photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_24.jpg",
+        "alt": "Gym photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_25.jpg",
+        "alt": "Exterior photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_26.jpg",
+        "alt": "Exterior photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_27.jpg",
+        "alt": "Exterior photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_28.jpg",
+        "alt": "Exterior photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_29.jpg",
+        "alt": "Exterior photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_30.jpg",
+        "alt": "Exterior photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_31.jpg",
+        "alt": "Pool photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_32.jpg",
+        "alt": "Pool photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_33.jpg",
+        "alt": "Pool photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_34.jpg",
+        "alt": "Additional photos photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_35.jpg",
+        "alt": "Additional photos photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_36.jpg",
+        "alt": "Additional photos photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_37.jpg",
+        "alt": "Additional photos photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_38.jpg",
+        "alt": "Additional photos photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_39.jpg",
+        "alt": "Additional photos photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_40.jpg",
+        "alt": "Additional photos photo 7"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_41.jpg",
+        "alt": "Additional photos photo 8"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_42.jpg",
+        "alt": "Additional photos photo 9"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_43.jpg",
+        "alt": "Additional photos photo 10"
+      }
+    ]
+  },
+  {
+    "title": "Pool",
+    "subtitle": "Pool",
+    "id": "photo-tour-content",
+    "images": [
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_01.jpg",
+        "alt": "Living room 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_04.jpg",
+        "alt": "Living room 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_11.jpg",
+        "alt": "Full kitchen"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_13.jpg",
+        "alt": "Bedroom"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_19.jpg",
+        "alt": "Full bathroom"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_20.jpg",
+        "alt": "Gym"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_25.jpg",
+        "alt": "Exterior"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_31.jpg",
+        "alt": "Pool"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_34.jpg",
+        "alt": "Additional photos"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_01.jpg",
+        "alt": "Living room 1 photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_02.jpg",
+        "alt": "Living room 1 photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_03.jpg",
+        "alt": "Living room 1 photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_04.jpg",
+        "alt": "Living room 2 photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_05.jpg",
+        "alt": "Living room 2 photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_06.jpg",
+        "alt": "Living room 2 photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_07.jpg",
+        "alt": "Living room 2 photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_08.jpg",
+        "alt": "Living room 2 photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_09.jpg",
+        "alt": "Living room 2 photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_10.jpg",
+        "alt": "Living room 2 photo 7"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_11.jpg",
+        "alt": "Full kitchen photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_12.jpg",
+        "alt": "Full kitchen photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_13.jpg",
+        "alt": "Bedroom photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_14.jpg",
+        "alt": "Bedroom photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_15.jpg",
+        "alt": "Bedroom photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_16.jpg",
+        "alt": "Bedroom photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_17.jpg",
+        "alt": "Bedroom photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_18.jpg",
+        "alt": "Bedroom photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_19.jpg",
+        "alt": "Full bathroom photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_20.jpg",
+        "alt": "Gym photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_21.jpg",
+        "alt": "Gym photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_22.jpg",
+        "alt": "Gym photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_23.jpg",
+        "alt": "Gym photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_24.jpg",
+        "alt": "Gym photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_25.jpg",
+        "alt": "Exterior photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_26.jpg",
+        "alt": "Exterior photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_27.jpg",
+        "alt": "Exterior photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_28.jpg",
+        "alt": "Exterior photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_29.jpg",
+        "alt": "Exterior photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_30.jpg",
+        "alt": "Exterior photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_31.jpg",
+        "alt": "Pool photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_32.jpg",
+        "alt": "Pool photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_33.jpg",
+        "alt": "Pool photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_34.jpg",
+        "alt": "Additional photos photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_35.jpg",
+        "alt": "Additional photos photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_36.jpg",
+        "alt": "Additional photos photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_37.jpg",
+        "alt": "Additional photos photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_38.jpg",
+        "alt": "Additional photos photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_39.jpg",
+        "alt": "Additional photos photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_40.jpg",
+        "alt": "Additional photos photo 7"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_41.jpg",
+        "alt": "Additional photos photo 8"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_42.jpg",
+        "alt": "Additional photos photo 9"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_43.jpg",
+        "alt": "Additional photos photo 10"
+      }
+    ]
+  },
+  {
+    "title": "Additional photos",
+    "subtitle": "",
+    "id": "photo-tour-content",
+    "images": [
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_01.jpg",
+        "alt": "Living room 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_04.jpg",
+        "alt": "Living room 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_11.jpg",
+        "alt": "Full kitchen"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_13.jpg",
+        "alt": "Bedroom"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_19.jpg",
+        "alt": "Full bathroom"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_20.jpg",
+        "alt": "Gym"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_25.jpg",
+        "alt": "Exterior"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_31.jpg",
+        "alt": "Pool"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_34.jpg",
+        "alt": "Additional photos"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_01.jpg",
+        "alt": "Living room 1 photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_02.jpg",
+        "alt": "Living room 1 photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_03.jpg",
+        "alt": "Living room 1 photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_04.jpg",
+        "alt": "Living room 2 photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_05.jpg",
+        "alt": "Living room 2 photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_06.jpg",
+        "alt": "Living room 2 photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_07.jpg",
+        "alt": "Living room 2 photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_08.jpg",
+        "alt": "Living room 2 photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_09.jpg",
+        "alt": "Living room 2 photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_10.jpg",
+        "alt": "Living room 2 photo 7"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_11.jpg",
+        "alt": "Full kitchen photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_12.jpg",
+        "alt": "Full kitchen photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_13.jpg",
+        "alt": "Bedroom photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_14.jpg",
+        "alt": "Bedroom photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_15.jpg",
+        "alt": "Bedroom photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_16.jpg",
+        "alt": "Bedroom photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_17.jpg",
+        "alt": "Bedroom photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_18.jpg",
+        "alt": "Bedroom photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_19.jpg",
+        "alt": "Full bathroom photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_20.jpg",
+        "alt": "Gym photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_21.jpg",
+        "alt": "Gym photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_22.jpg",
+        "alt": "Gym photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_23.jpg",
+        "alt": "Gym photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_24.jpg",
+        "alt": "Gym photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_25.jpg",
+        "alt": "Exterior photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_26.jpg",
+        "alt": "Exterior photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_27.jpg",
+        "alt": "Exterior photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_28.jpg",
+        "alt": "Exterior photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_29.jpg",
+        "alt": "Exterior photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_30.jpg",
+        "alt": "Exterior photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_31.jpg",
+        "alt": "Pool photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_32.jpg",
+        "alt": "Pool photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_33.jpg",
+        "alt": "Pool photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_34.jpg",
+        "alt": "Additional photos photo 1"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_35.jpg",
+        "alt": "Additional photos photo 2"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_36.jpg",
+        "alt": "Additional photos photo 3"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_37.jpg",
+        "alt": "Additional photos photo 4"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_38.jpg",
+        "alt": "Additional photos photo 5"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_39.jpg",
+        "alt": "Additional photos photo 6"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_40.jpg",
+        "alt": "Additional photos photo 7"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_41.jpg",
+        "alt": "Additional photos photo 8"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_42.jpg",
+        "alt": "Additional photos photo 9"
+      },
+      {
+        "src": "https://airbnbproj-iota.vercel.app/images/photos/photo_43.jpg",
+        "alt": "Additional photos photo 10"
+      }
+    ]
+  }
+]
