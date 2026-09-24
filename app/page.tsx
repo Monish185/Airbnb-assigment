@@ -37,6 +37,7 @@ export default function ListingPage() {
     closePhotoTour,
     openLightbox,
     closeLightbox,
+    openGalleryFromLightbox,
     nextPhoto,
     prevPhoto,
   } = useGallery();
@@ -44,8 +45,8 @@ export default function ListingPage() {
   const bookingCardRef = useRef<HTMLDivElement>(null);
 
   const handleHeroPhotoClick = (heroIndex: number) => {
-    // Map hero photos to corresponding global photo index
-    openPhotoTour();
+    // Open lightbox directly on hero photo click
+    openLightbox(heroIndex, false);
   };
 
   const handleReserveScroll = () => {
@@ -159,14 +160,16 @@ export default function ListingPage() {
         categories={LISTING_DATA.photoCategories}
         activeCategoryId={activeCategoryId}
         onClose={closePhotoTour}
-        onSelectPhoto={(idx) => openLightbox(idx)}
+        onSelectPhoto={(idx) => openLightbox(idx, true)}
       />
 
       <LightboxModal
         isOpen={isLightboxOpen}
         photos={allPhotos}
         currentIndex={activePhotoIndex}
+        categories={LISTING_DATA.photoCategories}
         onClose={closeLightbox}
+        onViewGallery={openGalleryFromLightbox}
         onNext={nextPhoto}
         onPrev={prevPhoto}
       />

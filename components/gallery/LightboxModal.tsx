@@ -1,15 +1,16 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-import Image from "next/image";
-import { CloseIcon, ChevronLeftIcon, ChevronRightIcon } from "../icons/Icons";
-import { PhotoItem } from "../../data/listing";
+import { CloseIcon, ChevronLeftIcon, ChevronRightIcon, GridDotsIcon } from "../icons/Icons";
+import { PhotoItem, RoomCategory } from "../../data/listing";
 
 interface LightboxModalProps {
   isOpen: boolean;
   photos: PhotoItem[];
   currentIndex: number;
+  categories?: RoomCategory[];
   onClose: () => void;
+  onViewGallery?: () => void;
   onNext: () => void;
   onPrev: () => void;
 }
@@ -18,7 +19,9 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
   isOpen,
   photos,
   currentIndex,
+  categories,
   onClose,
+  onViewGallery,
   onNext,
   onPrev,
 }) => {
@@ -28,7 +31,7 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
   useEffect(() => {
     if (!isOpen) return;
 
-    // Focus close button
+    // Focus close button on mount
     setTimeout(() => {
       closeBtnRef.current?.focus();
     }, 100);
@@ -43,6 +46,20 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
       } else if (e.key === "ArrowLeft") {
         e.preventDefault();
         onPrev();
+      } else if (e.key === "Tab" && modalRef.current) {
+        const focusableElements = modalRef.current.querySelectorAll<HTMLElement>(
+          'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+        );
+        const first = focusableElements[0];
+        const last = focusableElements[focusableElements.length - 1];
+
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
       }
     };
 
@@ -56,64 +73,84 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
   const isFirst = currentIndex === 0;
   const isLast = currentIndex === photos.length - 1;
 
+  // Determine room category name for current photo
+  let currentRoomName = "Photo";
+  if (categories && categories.length > 0) {
+    let running = 0;
+    for (const cat of categories) {
+      if (currentIndex >= running && currentIndex < running + cat.photos.length) {
+        currentRoomName = cat.name;
+        break;
+      }
+      running += cat.photos.length;
+    }
+  }
+
   return (
     <div
       ref={modalRef}
       role="dialog"
       aria-modal="true"
       aria-label="Single photo viewer"
-      className="fixed inset-0 z-[60] bg-black flex flex-col justify-between select-none"
+      className="fixed inset-0 z-[60] bg-white flex flex-col select-none"
     >
       {/* Top Header Bar */}
-      <div className="h-20 px-8 flex items-center justify-between z-10 text-white">
+      <div className="h-16 px-6 border-b border-[#EBEBEB] flex items-center justify-between shrink-0 bg-white z-10">
+        {/* Left: View photo tour gallery (3x3 grid dots) */}
         <button
-          ref={closeBtnRef}
           type="button"
-          onClick={onClose}
-          aria-label="Close lightbox"
-          className="flex items-center gap-2 p-3 rounded-full hover:bg-white/10 active:scale-95 transition-all text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+          onClick={onViewGallery || onClose}
+          aria-label="View photo tour gallery"
+          className="p-2.5 hover:bg-[#F7F7F7] rounded-full transition-colors flex items-center justify-center text-[#222222] focus:outline-none focus-visible:ring-2 focus-visible:ring-black"
         >
-          <CloseIcon size={16} />
-          <span className="text-sm font-semibold">Close</span>
+          <GridDotsIcon size={16} />
         </button>
 
-        {/* Counter */}
-        <div
-          aria-live="polite"
-          className="text-sm font-medium tracking-wider text-white"
-        >
-          {currentIndex + 1} / {photos.length}
-        </div>
+        {/* Center: Current Room Category */}
+        <h2 className="text-[16px] font-semibold text-[#222222]">
+          {currentRoomName}
+        </h2>
 
-        <div className="w-20" aria-hidden="true" />
+        {/* Right: Counter + Close */}
+        <div className="flex items-center gap-6">
+          <span
+            aria-live="polite"
+            className="text-[14px] font-normal text-[#222222]"
+          >
+            {currentIndex + 1} of {photos.length}
+          </span>
+          <button
+            ref={closeBtnRef}
+            type="button"
+            onClick={onClose}
+            aria-label="Close photo viewer"
+            className="p-2 hover:bg-[#F7F7F7] rounded-full transition-colors text-[#222222] focus:outline-none focus-visible:ring-2 focus-visible:ring-black"
+          >
+            <CloseIcon size={16} />
+          </button>
+        </div>
       </div>
 
       {/* Main Image Stage */}
-      <div className="flex-1 relative flex items-center justify-between px-6 lg:px-16 overflow-hidden">
+      <div className="flex-1 relative flex items-center justify-center p-2 sm:p-6 md:px-20 overflow-hidden bg-white">
         {/* Previous Button */}
         <button
           type="button"
           disabled={isFirst}
           onClick={onPrev}
           aria-label="Previous photo"
-          className={`w-12 h-12 rounded-full border border-white/40 bg-black/40 text-white flex items-center justify-center transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-white ${
-            isFirst
-              ? "opacity-30 cursor-not-allowed"
-              : "hover:bg-white hover:text-black hover:scale-105 active:scale-95 cursor-pointer shadow-lg"
-          }`}
+          className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 rounded-full border border-[#DDDDDD] bg-white/95 hover:bg-white shadow-md flex items-center justify-center text-[#222222] hover:scale-105 active:scale-95 transition-all disabled:opacity-30 disabled:cursor-not-allowed focus:outline-none focus-visible:ring-2 focus-visible:ring-black"
         >
-          <ChevronLeftIcon size={18} />
+          <ChevronLeftIcon size={20} />
         </button>
 
-        {/* Central Active Photo */}
-        <div className="relative w-full max-w-[1000px] h-[75vh] flex items-center justify-center">
-          <Image
+        {/* Centered Image */}
+        <div className="w-full h-full flex items-center justify-center select-none">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             src={currentPhoto.src}
             alt={currentPhoto.alt}
-            fill
-            priority
-            sizes="1000px"
-            className="object-contain"
+            className="max-w-full max-h-[calc(100vh-100px)] object-contain select-none"
           />
         </div>
 
@@ -123,19 +160,10 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
           disabled={isLast}
           onClick={onNext}
           aria-label="Next photo"
-          className={`w-12 h-12 rounded-full border border-white/40 bg-black/40 text-white flex items-center justify-center transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-white ${
-            isLast
-              ? "opacity-30 cursor-not-allowed"
-              : "hover:bg-white hover:text-black hover:scale-105 active:scale-95 cursor-pointer shadow-lg"
-          }`}
+          className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 rounded-full border border-[#DDDDDD] bg-white/95 hover:bg-white shadow-md flex items-center justify-center text-[#222222] hover:scale-105 active:scale-95 transition-all disabled:opacity-30 disabled:cursor-not-allowed focus:outline-none focus-visible:ring-2 focus-visible:ring-black"
         >
-          <ChevronRightIcon size={18} />
+          <ChevronRightIcon size={20} />
         </button>
-      </div>
-
-      {/* Bottom Caption Bar */}
-      <div className="h-16 px-8 flex items-center justify-center text-sm text-gray-300">
-        <p className="truncate max-w-xl text-center">{currentPhoto.alt}</p>
       </div>
     </div>
   );

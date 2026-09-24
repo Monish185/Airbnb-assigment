@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
-import { CloseIcon, ShareIcon, HeartIcon } from "../icons/Icons";
-import { RoomCategory, PhotoItem } from "../../data/listing";
+import { ChevronLeftIcon, ShareIcon, HeartIcon } from "../icons/Icons";
+import { RoomCategory } from "../../data/listing";
 
 interface PhotoTourModalProps {
   isOpen: boolean;
@@ -20,11 +20,10 @@ export const PhotoTourModal: React.FC<PhotoTourModalProps> = ({
   onClose,
   onSelectPhoto,
 }) => {
-  const [currentActiveCat, setCurrentActiveCat] = useState(activeCategoryId);
   const modalRef = useRef<HTMLDivElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
 
-  // Focus trap & escape key handler
+  // Focus trap & keyboard handler
   useEffect(() => {
     if (!isOpen) return;
 
@@ -60,6 +59,18 @@ export const PhotoTourModal: React.FC<PhotoTourModalProps> = ({
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isOpen, onClose]);
 
+  // Scroll to active category if specified when opened
+  useEffect(() => {
+    if (isOpen && activeCategoryId) {
+      setTimeout(() => {
+        const targetEl = document.getElementById(`room-section-${activeCategoryId}`);
+        if (targetEl) {
+          targetEl.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 100);
+    }
+  }, [isOpen, activeCategoryId]);
+
   if (!isOpen) return null;
 
   // Flatten all photos for global indexing
@@ -71,7 +82,6 @@ export const PhotoTourModal: React.FC<PhotoTourModalProps> = ({
   });
 
   const scrollToCategory = (catId: string) => {
-    setCurrentActiveCat(catId);
     const targetEl = document.getElementById(`room-section-${catId}`);
     if (targetEl) {
       targetEl.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -86,137 +96,140 @@ export const PhotoTourModal: React.FC<PhotoTourModalProps> = ({
       aria-label="Photo tour modal"
       className="fixed inset-0 z-50 bg-white overflow-y-auto flex flex-col"
     >
-      {/* Sticky Header */}
-      <div className="sticky top-0 z-30 bg-white border-b border-[#EBEBEB] px-6 lg:px-10 py-3 flex flex-col">
-        {/* Top Action Row */}
-        <div className="flex items-center justify-between pb-3">
-          <button
-            ref={closeButtonRef}
-            type="button"
-            onClick={onClose}
-            aria-label="Close photo tour"
-            className="p-2.5 hover:bg-[#F7F7F7] rounded-full transition-colors -ml-2 text-[#222222] focus:outline-none focus-visible:ring-2 focus-visible:ring-black"
-          >
-            <CloseIcon size={16} />
-          </button>
-
-          <div className="flex items-center gap-2">
-            <button
-              type="button"
-              aria-label="Share listing"
-              className="p-2.5 hover:bg-[#F7F7F7] rounded-full transition-colors text-[#222222] focus:outline-none focus-visible:ring-2 focus-visible:ring-black"
-            >
-              <ShareIcon size={16} />
-            </button>
-            <button
-              type="button"
-              aria-label="Save listing"
-              className="p-2.5 hover:bg-[#F7F7F7] rounded-full transition-colors text-[#222222] focus:outline-none focus-visible:ring-2 focus-visible:ring-black"
-            >
-              <HeartIcon size={16} />
-            </button>
-          </div>
-        </div>
-
-        {/* Category Thumbnail Navigation Carousel */}
-        <div
-          className="flex items-center gap-4 overflow-x-auto no-scrollbar py-2 border-t border-[#F0F0F0]"
-          role="tablist"
-          aria-label="Room categories"
+      {/* 1. Sticky Top Bar: Close, Title, Share, Save */}
+      <div className="sticky top-0 z-40 bg-white px-6 md:px-10 h-16 md:h-20 flex items-center justify-between shrink-0">
+        <button
+          ref={closeButtonRef}
+          type="button"
+          onClick={onClose}
+          aria-label="Close photo tour"
+          className="p-2.5 hover:bg-[#F7F7F7] rounded-full transition-colors -ml-2 text-[#222222] focus:outline-none focus-visible:ring-2 focus-visible:ring-black"
         >
-          {categoriesWithIndex.map((cat) => {
-            const isActive = currentActiveCat === cat.id;
-            return (
-              <button
-                key={cat.id}
-                type="button"
-                role="tab"
-                aria-selected={isActive}
-                onClick={() => scrollToCategory(cat.id)}
-                className="flex flex-col items-start text-left group focus:outline-none flex-shrink-0 cursor-pointer"
-              >
-                <div
-                  className={`w-[120px] h-[75px] rounded-[8px] overflow-hidden bg-gray-100 mb-1.5 border-2 transition-all ${
-                    isActive ? "border-black" : "border-transparent"
-                  }`}
-                >
-                  <div className="relative w-full h-full">
-                    <Image
-                      src={cat.thumbnail}
-                      alt=""
-                      fill
-                      sizes="120px"
-                      className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                </div>
-                <span
-                  className={`text-xs transition-colors ${
-                    isActive
-                      ? "font-bold text-[#222222]"
-                      : "font-medium text-[#717171] group-hover:text-[#222222]"
-                  }`}
-                >
-                  {cat.name}
-                </span>
-              </button>
-            );
-          })}
+          <ChevronLeftIcon size={20} />
+        </button>
+
+        <h2 className="text-[16px] font-semibold text-[#222222]">Photo tour</h2>
+
+        <div className="flex items-center gap-2">
+          <button
+            type="button"
+            aria-label="Share listing"
+            className="p-2.5 hover:bg-[#F7F7F7] rounded-full transition-colors text-[#222222] focus:outline-none focus-visible:ring-2 focus-visible:ring-black"
+          >
+            <ShareIcon size={16} />
+          </button>
+          <button
+            type="button"
+            aria-label="Save listing"
+            className="p-2.5 hover:bg-[#F7F7F7] rounded-full transition-colors text-[#222222] focus:outline-none focus-visible:ring-2 focus-visible:ring-black"
+          >
+            <HeartIcon size={16} />
+          </button>
         </div>
       </div>
 
-      {/* Main Scrollable Content */}
-      <div className="flex-1 max-w-[1120px] w-full mx-auto px-6 py-10 space-y-16">
-        <h2 className="text-[26px] font-bold text-[#222222]">Photo tour</h2>
-
-        {categoriesWithIndex.map((cat) => (
-          <section
-            key={cat.id}
-            id={`room-section-${cat.id}`}
-            aria-labelledby={`heading-${cat.id}`}
-            className="space-y-4 pt-4 scroll-mt-36"
-          >
-            <div>
-              <h3
-                id={`heading-${cat.id}`}
-                className="text-[22px] font-semibold text-[#222222]"
-              >
+      {/* 2. Main Scrollable Container */}
+      <div className="max-w-[976px] mx-auto w-full px-4 sm:px-6 md:px-0 pt-2 pb-28 flex-1">
+        {/* Category Thumbnails Responsive Grid */}
+        <div
+          id="photo-tour-thumbnails"
+          role="tablist"
+          aria-label="Room categories"
+          className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 gap-x-3 gap-y-4 mb-16"
+        >
+          {categoriesWithIndex.map((cat) => (
+            <button
+              key={cat.id}
+              type="button"
+              role="tab"
+              aria-label={cat.name}
+              onClick={() => scrollToCategory(cat.id)}
+              className="flex flex-col items-start text-left group focus:outline-none w-full cursor-pointer"
+            >
+              <div className="w-full h-[105px] rounded-[8px] overflow-hidden bg-gray-100 mb-1.5 relative">
+                <Image
+                  src={cat.thumbnail}
+                  alt=""
+                  fill
+                  sizes="120px"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <span className="text-[12px] text-[#222222] font-normal leading-[16px] group-hover:underline">
                 {cat.name}
-              </h3>
-              {cat.subtitle && (
-                <p className="text-sm text-[#717171] mt-1">{cat.subtitle}</p>
-              )}
-            </div>
+              </span>
+            </button>
+          ))}
+        </div>
 
-            {/* Photo Grid per Room */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {cat.photos.map((photo, pIdx) => {
-                const globalIndex = cat.startIndex + pIdx;
-                // If it's single photo or first of odd set, make it full-width
-                const isFullWidth = cat.photos.length === 1 || (cat.photos.length % 2 !== 0 && pIdx === 0);
+        {/* Room Sections: 2-Column Layout */}
+        <div className="space-y-20">
+          {categoriesWithIndex.map((cat) => (
+            <section
+              key={cat.id}
+              id={`room-section-${cat.id}`}
+              aria-labelledby={`heading-${cat.id}`}
+              className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-x-[60px] items-start scroll-mt-24"
+            >
+              {/* Left Column: Sticky Title & Subtitle */}
+              <div className="w-full lg:sticky lg:top-28 space-y-2">
+                <h3
+                  id={`heading-${cat.id}`}
+                  className="text-[26px] md:text-[32px] leading-tight font-semibold text-[#222222]"
+                >
+                  {cat.name}
+                </h3>
+                {cat.subtitle && (
+                  <p className="text-[14px] md:text-[15px] leading-[22px] text-[#6A6A6A] font-normal">
+                    {cat.subtitle}
+                  </p>
+                )}
+              </div>
 
-                return (
+              {/* Right Column: Photos Grid */}
+              <div className="w-full space-y-3">
+                {/* First Photo Full-Width */}
+                {cat.photos.length > 0 && (
                   <div
-                    key={photo.id}
-                    onClick={() => onSelectPhoto(globalIndex)}
-                    className={`relative rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group ${
-                      isFullWidth ? "md:col-span-2 aspect-[16/9]" : "aspect-[4/3]"
-                    }`}
+                    onClick={() => onSelectPhoto(cat.startIndex)}
+                    className="w-full aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
                   >
                     <Image
-                      src={photo.src}
-                      alt={photo.alt}
+                      src={cat.photos[0].src}
+                      alt={cat.photos[0].alt}
                       fill
-                      sizes="(max-width: 1120px) 100vw, 1120px"
-                      className="object-cover group-hover:scale-[1.01] transition-transform duration-300"
+                      sizes="(max-width: 976px) 100vw, 600px"
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]"
                     />
-                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors pointer-events-none" />
                   </div>
-                );
-              })}
-            </div>
-          </section>
-        ))}
+                )}
+
+                {/* Remaining Photos in 2-Column Grid */}
+                {cat.photos.length > 1 && (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    {cat.photos.slice(1).map((photo, pIdx) => (
+                      <div
+                        key={photo.id}
+                        onClick={() => onSelectPhoto(cat.startIndex + 1 + pIdx)}
+                        className="aspect-[4/3] rounded-[12px] overflow-hidden bg-gray-100 cursor-pointer group relative"
+                      >
+                        <Image
+                          src={photo.src}
+                          alt={photo.alt}
+                          fill
+                          sizes="(max-width: 976px) 50vw, 300px"
+                          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.01]"
+                        />
+                        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors pointer-events-none" />
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </section>
+          ))}
+        </div>
       </div>
     </div>
   );

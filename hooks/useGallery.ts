@@ -11,8 +11,9 @@ export interface GalleryState {
   allPhotos: PhotoItem[];
   openPhotoTour: (categoryId?: string) => void;
   closePhotoTour: () => void;
-  openLightbox: (photoIndex: number) => void;
+  openLightbox: (photoIndex: number, fromTour?: boolean) => void;
   closeLightbox: () => void;
+  openGalleryFromLightbox: () => void;
   nextPhoto: () => void;
   prevPhoto: () => void;
   setActiveCategoryId: (id: string) => void;
@@ -51,13 +52,22 @@ export function useGallery(): GalleryState {
     setIsPhotoTourOpen(false);
   }, []);
 
-  const openLightbox = useCallback((photoIndex: number) => {
+  const openLightbox = useCallback((photoIndex: number, fromTour = false) => {
     setActivePhotoIndex(photoIndex);
+    if (!fromTour) {
+      // If opened from hero grid, we don't open the photo tour underneath
+      setIsPhotoTourOpen(false);
+    }
     setIsLightboxOpen(true);
   }, []);
 
   const closeLightbox = useCallback(() => {
     setIsLightboxOpen(false);
+  }, []);
+
+  const openGalleryFromLightbox = useCallback(() => {
+    setIsLightboxOpen(false);
+    setIsPhotoTourOpen(true);
   }, []);
 
   const nextPhoto = useCallback(() => {
@@ -96,6 +106,7 @@ export function useGallery(): GalleryState {
     closePhotoTour,
     openLightbox,
     closeLightbox,
+    openGalleryFromLightbox,
     nextPhoto,
     prevPhoto,
     setActiveCategoryId,
