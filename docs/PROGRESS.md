@@ -53,7 +53,7 @@
 - [ ] Establish directory structure
 
 ### Phase 3: Listing Page
-- [ ] Header & Navigation Bar
+- [x] Header & Navigation Bar (with search pill, house illustration, currency, and menu controls)
 - [ ] Title, Share / Save buttons
 - [ ] Hero 5-Photo Grid with corner radii and "Show all photos" trigger
 - [ ] Property Overview & Host section
@@ -61,7 +61,7 @@
 - [ ] Description (collapsible / read more)
 - [ ] Sleeping Arrangements
 - [x] Amenities Grid & full modal dialog (with 50 individual handcrafted SVG amenity icons, item divider lines, category grouping, and smooth opening/closing transitions)
-- [ ] Reviews section with rating breakdown
+- [x] Reviews section with rating breakdown (7-column breakdown grid, category icons, rating percentage bars, laurel wreath, report listing link, and filter tag pills)
 - [ ] Location & Candolim Map view
 - [ ] Host Profile card
 - [ ] House Rules & Things to Know
