@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      padding: 40px;
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      color: #222222;
+      font-size: 26px;
+      margin-bottom: 8px;
+    }
+    p {
+      color: #717171;
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+    .mermaid {
+      background: #ffffff;
+      padding: 24px;
+      border: 1px solid #DDDDDD;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      max-width: 1400px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Production-Scale Vacation Rental Marketplace Architecture (Airbnb Scale)</h1>
+  <p>High-Availability System Design: Multi-Region Ingress, Edge CDN, Domain Microservices, Kafka Event Streaming, Aurora Postgres, Redis Redlock, OpenSearch & CDC</p>
+  <div class="mermaid">
+graph TD
+    %% CLIENT LAYER
+    subgraph Clients["1. Global Client Layer"]
+        Browser["Desktop & Mobile Web (Next.js SSR/ISR)"]
+        NativeApp["iOS / Android Native Apps"]
+    end
+
+    %% EDGE & CDN
+    subgraph EdgeLayer["2. Edge & Content Delivery Network (Cloudflare / Fastly)"]
+        CDN["Global Edge CDN: Static Assets, Images, Cached ISR Listings"]
+        WAF["Edge WAF & DDoS Shield (Cloudflare Magic Transit)"]
+        ImageProxy["Image Optimization Pipeline (Resizing, WebP/AVIF, Responsive Srcsets)"]
+    end
+
+    %% GATEWAY
+    subgraph GatewayLayer["3. Ingress & API Gateway"]
+        APIGateway["Kong / Envoy API Gateway (Rate Limiting, Auth Validation, Circuit Breaking)"]
+        AuthService["Auth & Session Validation (JWT / OAuth2 / OIDC)"]
+    end
+
+    %% MICROSERVICES LAYER
+    subgraph CoreServices["4. Domain Microservices (Stateless Kubernetes Clusters - EKS/GKE)"]
+        ListingsService["Listing Service (CRUD, Media, Host Rules)"]
+        SearchService["Search & Discovery Service (Geo-spatial & Filtering)"]
+        BookingService["Booking Engine (State Machine, Availability, Idempotency)"]
+        PaymentService["Payment Service (Stripe/PCI-DSS Vault, Escrow Ledger)"]
+        ReviewsService["Reviews & Reputation Engine"]
+        MessagingService["Real-time Messaging (WebSocket Gateway)"]
+        NotificationService["Notification Service (Email, SMS, Push)"]
+    end
+
+    %% EVENT BUS & ASYNC
+    subgraph EventStream["5. Event Streaming & Distributed Queuing"]
+        Kafka["Apache Kafka Event Bus (Topics: bookings, listing-updates, payments)"]
+        SQS["Worker Task Queues (Async Image Processing, Email Dispatch)"]
+        DebeziumCDC["Change Data Capture (Debezium / Kafka Connect)"]
+    end
+
+    %% STORAGE LAYER
+    subgraph StorageLayer["6. Data Persistence & Caching Tier"]
+        PostgresPrimary["Primary Relational DB (PostgreSQL Aurora Multi-AZ)"]
+        PostgresReplica["PostgreSQL Read Replicas (Regionally Distributed)"]
+        RedisCluster["Redis Cluster: Distributed Availability Locks (Redlock) & Hot Caches"]
+        OpenSearch["OpenSearch / Elasticsearch Cluster (Geo-Distance, Price, Dates)"]
+        S3Photos["Object Storage (AWS S3 / Cloud Storage - Original & Transcoded Media)"]
+        SnowflakeDW["Data Warehouse (Snowflake / BigQuery - BI, ML Pricing Models)"]
+    end
+
+    %% DATA FLOWS
+    Browser --> WAF
+    NativeApp --> WAF
+    WAF --> CDN
+    CDN -->|Cache Miss| APIGateway
+    CDN --> ImageProxy
+    ImageProxy --> S3Photos
+
+    APIGateway --> AuthService
+    APIGateway --> ListingsService
+    APIGateway --> SearchService
+    APIGateway --> BookingService
+    APIGateway --> PaymentService
+    APIGateway --> ReviewsService
+    APIGateway --> MessagingService
+
+    %% Microservices to DB & Cache
+    ListingsService --> PostgresPrimary
+    ListingsService --> S3Photos
+    ListingsService --> RedisCluster
+
+    SearchService --> OpenSearch
+    SearchService --> RedisCluster
+
+    BookingService --> RedisCluster
+    BookingService --> PostgresPrimary
+    BookingService --> Kafka
+
+    PaymentService --> PostgresPrimary
+    PaymentService --> Kafka
+
+    ReviewsService --> PostgresPrimary
+    ReviewsService --> Kafka
+
+    %% Async & CDC Pipelines
+    PostgresPrimary --> DebeziumCDC
+    DebeziumCDC --> Kafka
+    Kafka --> OpenSearch
+    Kafka --> NotificationService
+    Kafka --> SnowflakeDW
+    Kafka --> SQS
+
+    %% Read Replicas
+    PostgresPrimary -.->|Streaming Replication| PostgresReplica
+    ListingsService -.->|Read Queries| PostgresReplica
+
+  </div>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: 'neutral',
+      flowchart: {
+        useMaxWidth: false,
+        htmlLabels: true,
+        curve: 'basis'
+      }
+    });
+  </script>
+</body>
+</html>
