@@ -64,9 +64,11 @@ export const BookingCard: React.FC<BookingCardProps> = ({
       {/* Pricing Header */}
       <div className="flex items-baseline gap-1.5">
         <span className="text-[22px] leading-[26px] font-bold text-[#222222]">
-          ₹{accommodationTotal.toLocaleString("en-IN")}
+          ₹{(nights > 0 ? accommodationTotal : pricePerNight).toLocaleString("en-IN")}
         </span>
-        <span className="text-base text-[#717171]">for {nights} nights</span>
+        <span className="text-base text-[#717171]">
+          {nights > 0 ? `for ${nights} nights` : "night"}
+        </span>
       </div>
 
       {/* Date & Guest Input Box */}
@@ -149,27 +151,29 @@ export const BookingCard: React.FC<BookingCardProps> = ({
       </div>
 
       {/* Cost Breakdown */}
-      <div className="space-y-3 pt-3 text-sm text-[#222222]">
-        <div className="flex justify-between items-center">
-          <span className="underline">
-            ₹{pricePerNight.toLocaleString("en-IN")} x {nights} nights
-          </span>
-          <span>₹{accommodationTotal.toLocaleString("en-IN")}</span>
-        </div>
-        <div className="flex justify-between items-center">
-          <span className="underline">Cleaning fee</span>
-          <span>₹{cleaningFee.toLocaleString("en-IN")}</span>
-        </div>
-        <div className="flex justify-between items-center">
-          <span className="underline">Airbnb service fee</span>
-          <span>₹{serviceFee.toLocaleString("en-IN")}</span>
-        </div>
+      {nights > 0 && (
+        <div className="space-y-3 pt-3 text-sm text-[#222222]">
+          <div className="flex justify-between items-center">
+            <span className="underline">
+              ₹{pricePerNight.toLocaleString("en-IN")} x {nights} nights
+            </span>
+            <span>₹{accommodationTotal.toLocaleString("en-IN")}</span>
+          </div>
+          <div className="flex justify-between items-center">
+            <span className="underline">Cleaning fee</span>
+            <span>₹{cleaningFee.toLocaleString("en-IN")}</span>
+          </div>
+          <div className="flex justify-between items-center">
+            <span className="underline">Airbnb service fee</span>
+            <span>₹{serviceFee.toLocaleString("en-IN")}</span>
+          </div>
 
-        <div className="border-t border-[#EBEBEB] pt-4 flex justify-between items-center text-base font-bold">
-          <span>Total before taxes</span>
-          <span>₹{totalBeforeTaxes.toLocaleString("en-IN")}</span>
+          <div className="border-t border-[#EBEBEB] pt-4 flex justify-between items-center text-base font-bold">
+            <span>Total before taxes</span>
+            <span>₹{totalBeforeTaxes.toLocaleString("en-IN")}</span>
+          </div>
         </div>
-      </div>
+      )}
     </aside>
   );
 };

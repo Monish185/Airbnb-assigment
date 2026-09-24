@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { LISTING_DATA } from "@/data/listing";
 import { useGallery } from "@/hooks/useGallery";
 
@@ -47,6 +47,11 @@ export default function ListingPage() {
   } = useGallery();
 
   const bookingCardRef = useRef<HTMLDivElement>(null);
+  const [bookingDates, setBookingDates] = useState({
+    checkInDate: LISTING_DATA.pricing.checkInDate,
+    checkoutDate: LISTING_DATA.pricing.checkoutDate,
+    nights: LISTING_DATA.pricing.nights,
+  });
 
   const handleHeroPhotoClick = (heroIndex: number) => {
     // Open lightbox directly on hero photo click
@@ -107,18 +112,18 @@ export default function ListingPage() {
               onShowAllAmenities={openAmenitiesModal}
             />
 
-            <CalendarSection />
+            <CalendarSection onDatesChange={setBookingDates} />
           </div>
 
           {/* Right Column (5 cols - Sticky Booking Card) */}
           <div ref={bookingCardRef} className="lg:col-span-5">
             <BookingCard
               pricePerNight={LISTING_DATA.pricing.pricePerNight}
-              nights={LISTING_DATA.pricing.nights}
+              nights={bookingDates.nights}
               cleaningFee={LISTING_DATA.pricing.cleaningFee}
               serviceFee={LISTING_DATA.pricing.serviceFee}
-              checkInDate={LISTING_DATA.pricing.checkInDate}
-              checkoutDate={LISTING_DATA.pricing.checkoutDate}
+              checkInDate={bookingDates.checkInDate}
+              checkoutDate={bookingDates.checkoutDate}
               onReserveClick={() => alert("Reservation request initiated!")}
             />
           </div>
